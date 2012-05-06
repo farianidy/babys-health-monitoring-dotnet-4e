@@ -1,0 +1,15 @@
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\1) FP\Bhm\Bhm.Model\bin\Debug\Bhm.Model.dll
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\1) FP\Bhm\Bhm.Model\bin\Debug\Bhm.Model.pdb
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\1) FP\Bhm\Bhm.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\1) FP\Bhm\Bhm.Model\obj\Debug\Bhm.Model.dll
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\1) FP\Bhm\Bhm.Model\obj\Debug\Bhm.Model.pdb
+C:\Users\admin\Documents\dotnet\Bhm\Bhm.Model\bin\Debug\Bhm.Model.dll
+C:\Users\admin\Documents\dotnet\Bhm\Bhm.Model\bin\Debug\Bhm.Model.pdb
+C:\Users\admin\Documents\dotnet\Bhm\Bhm.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Documents\dotnet\Bhm\Bhm.Model\obj\Debug\Bhm.Model.dll
+C:\Users\admin\Documents\dotnet\Bhm\Bhm.Model\obj\Debug\Bhm.Model.pdb
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\3) Exception\Bhm\Bhm.Model\bin\Debug\Bhm.Model.dll
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\3) Exception\Bhm\Bhm.Model\bin\Debug\Bhm.Model.pdb
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\3) Exception\Bhm\Bhm.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\3) Exception\Bhm\Bhm.Model\obj\Debug\Bhm.Model.dll
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\3) Exception\Bhm\Bhm.Model\obj\Debug\Bhm.Model.pdb
