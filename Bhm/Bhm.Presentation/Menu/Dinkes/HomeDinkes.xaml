@@ -1,0 +1,19 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Bhm.Presentation.HomeDinkes"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480" Width="860" Height="555">
+
+	<Grid x:Name="LayoutRoot">
+		<Label Content="Selamat Datang, Dinas Kesehatan" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" FontSize="18.667"/>
+		<Button x:Name="bBalita" Content="Balita" HorizontalAlignment="Left" Margin="101.579,235.543,0,0" VerticalAlignment="Top" Width="129.469" Height="41.098" Click="bBalita_Click"/>
+		<Button x:Name="bPosyandu" Content="Posyandu" HorizontalAlignment="Left" Margin="284.125,235.543,0,0" VerticalAlignment="Top" Width="129.469" Height="41.098" Click="bPosyandu_Click"/>
+		<Button x:Name="bLaporanGizi" Content="Laporan Gizi" HorizontalAlignment="Right" Margin="0,235.543,266.803,0" VerticalAlignment="Top" Width="129.469" Height="41.098" Click="bLaporanGizi_Click"/>
+		<Button x:Name="bLaporanKeaktifan" Content="Laporan Keaktifan" HorizontalAlignment="Right" Margin="0,235.543,90.145,0" VerticalAlignment="Top" Width="129.469" Height="41.098" Click="bLaporanKeaktifan_Click"/>
+		<Button x:Name="bLogout" Content="Logout" HorizontalAlignment="Right" Margin="0,8,8,0" VerticalAlignment="Top" Width="75" Click="bLogout_Click"/>
+	</Grid>
+</UserControl>
