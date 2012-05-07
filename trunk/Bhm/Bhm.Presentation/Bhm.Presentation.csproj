@@ -77,160 +77,179 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Menu\Dinkes\BalitaDinkes.xaml.cs">
+    <Compile Include="Menus\Dinkes\BalitaDinkes.xaml.cs">
       <DependentUpon>BalitaDinkes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dinkes\DaftarPosyandu.xaml.cs">
+    <Compile Include="Menus\Dinkes\DaftarPosyandu.xaml.cs">
       <DependentUpon>DaftarPosyandu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dinkes\DetailPosyanduDinkes.xaml.cs">
+    <Compile Include="Menus\Dinkes\DetailPosyanduDinkes.xaml.cs">
       <DependentUpon>DetailPosyanduDinkes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dinkes\LaporanKeaktifan.xaml.cs">
+    <Compile Include="Menus\Dinkes\LaporanKeaktifan.xaml.cs">
       <DependentUpon>LaporanKeaktifan.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dinkes\LaporanGizi.xaml.cs">
+    <Compile Include="Menus\Dinkes\LaporanGizi.xaml.cs">
       <DependentUpon>LaporanGizi.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dinkes\PosyanduDinkes.xaml.cs">
+    <Compile Include="Menus\Dinkes\PosyanduDinkes.xaml.cs">
       <DependentUpon>PosyanduDinkes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dinkes\DetailBalitaDinkes.xaml.cs">
+    <Compile Include="Menus\Dinkes\DetailBalitaDinkes.xaml.cs">
       <DependentUpon>DetailBalitaDinkes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dinkes\LaporanBalitaDinkes.xaml.cs">
+    <Compile Include="Menus\Dinkes\LaporanBalitaDinkes.xaml.cs">
       <DependentUpon>LaporanBalitaDinkes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dispencapil\DetailBalitaDispen.xaml.cs">
+    <Compile Include="Menus\Dispencapil\DetailBalitaDispen.xaml.cs">
       <DependentUpon>DetailBalitaDispen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dispencapil\LihatBalitaDispen.xaml.cs">
+    <Compile Include="Menus\Dispencapil\LihatBalitaDispen.xaml.cs">
       <DependentUpon>LihatBalitaDispen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Posyandu\BalitaPosyandu.xaml.cs">
+    <Compile Include="Menus\Posyandu\BalitaPosyandu.xaml.cs">
       <DependentUpon>BalitaPosyandu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Posyandu\DetailPosyanduPosyandu.xaml.cs">
+    <Compile Include="Menus\Posyandu\DetailPosyanduPosyandu.xaml.cs">
       <DependentUpon>DetailPosyanduPosyandu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Posyandu\LaporanBalitaPosyandu.xaml.cs">
+    <Compile Include="Menus\Posyandu\LaporanBalitaPosyandu.xaml.cs">
       <DependentUpon>LaporanBalitaPosyandu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Posyandu\Vitamin.xaml.cs">
-      <DependentUpon>Vitamin.xaml</DependentUpon>
+    <Compile Include="Menus\Posyandu\DaftarVitamin.xaml.cs">
+      <DependentUpon>DaftarVitamin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Posyandu\Imunisasi.xaml.cs">
-      <DependentUpon>Imunisasi.xaml</DependentUpon>
+    <Compile Include="Menus\Posyandu\DaftarImunisasi.xaml.cs">
+      <DependentUpon>DaftarImunisasi.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Posyandu\DetailBalitaPosyandu.xaml.cs">
+    <Compile Include="Menus\Posyandu\DetailBalitaPosyandu.xaml.cs">
       <DependentUpon>DetailBalitaPosyandu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Posyandu\IkutKegiatan.xaml.cs">
+    <Compile Include="Menus\Posyandu\IkutKegiatan.xaml.cs">
       <DependentUpon>IkutKegiatan.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Posyandu\PosyanduPosyandu.xaml.cs">
+    <Compile Include="Menus\Posyandu\PosyanduPosyandu.xaml.cs">
       <DependentUpon>PosyanduPosyandu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Ayah.cs" />
+    <Compile Include="Models\AyahMap.cs" />
+    <Compile Include="Models\Balita.cs" />
+    <Compile Include="Models\BalitaMap.cs" />
+    <Compile Include="Models\Ibu.cs" />
+    <Compile Include="Models\IbuMap.cs" />
+    <Compile Include="Models\Imunisasi.cs" />
+    <Compile Include="Models\ImunisasiMap.cs" />
+    <Compile Include="Models\Kegiatan.cs" />
+    <Compile Include="Models\KegiatanMap.cs" />
+    <Compile Include="Models\Pegawai.cs" />
+    <Compile Include="Models\PegawaiMap.cs" />
+    <Compile Include="Models\Posyandu.cs" />
+    <Compile Include="Models\PosyanduMap.cs" />
+    <Compile Include="Models\Urutan.cs" />
+    <Compile Include="Models\UrutanMap.cs" />
+    <Compile Include="Models\Vitamin.cs" />
+    <Compile Include="Models\VitaminMap.cs" />
     <Compile Include="Utils\BaseFunc.cs" />
     <Compile Include="Utils\ISwitchable.cs" />
+    <Compile Include="Utils\NHibernateHelper.cs" />
     <Compile Include="Utils\Switcher.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Menu\Dinkes\BalitaDinkes.xaml">
+    <Page Include="Menus\Dinkes\BalitaDinkes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dinkes\DaftarPosyandu.xaml">
+    <Page Include="Menus\Dinkes\DaftarPosyandu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dinkes\DetailPosyanduDinkes.xaml">
+    <Page Include="Menus\Dinkes\DetailPosyanduDinkes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dinkes\LaporanKeaktifan.xaml">
+    <Page Include="Menus\Dinkes\LaporanKeaktifan.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dinkes\LaporanGizi.xaml">
+    <Page Include="Menus\Dinkes\LaporanGizi.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dinkes\PosyanduDinkes.xaml">
+    <Page Include="Menus\Dinkes\PosyanduDinkes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dinkes\DetailBalitaDinkes.xaml">
+    <Page Include="Menus\Dinkes\DetailBalitaDinkes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dinkes\HomeDinkes.xaml">
+    <Page Include="Menus\Dinkes\HomeDinkes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dinkes\LaporanBalitaDinkes.xaml">
+    <Page Include="Menus\Dinkes\LaporanBalitaDinkes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dispencapil\DaftarBalita.xaml">
+    <Page Include="Menus\Dispencapil\DaftarBalita.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dispencapil\DetailBalitaDispen.xaml">
+    <Page Include="Menus\Dispencapil\DetailBalitaDispen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dispencapil\HomeDispencapil.xaml">
+    <Page Include="Menus\Dispencapil\HomeDispencapil.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Dispencapil\LihatBalitaDispen.xaml">
+    <Page Include="Menus\Dispencapil\LihatBalitaDispen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\HasilCariPage.xaml">
+    <Page Include="Menus\HasilCariPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\HomeMain.xaml">
+    <Page Include="Menus\HomeMain.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Posyandu\BalitaPosyandu.xaml">
+    <Page Include="Menus\Posyandu\BalitaPosyandu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Posyandu\DetailPosyanduPosyandu.xaml">
+    <Page Include="Menus\Posyandu\DetailPosyanduPosyandu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Posyandu\LaporanBalitaPosyandu.xaml">
+    <Page Include="Menus\Posyandu\LaporanBalitaPosyandu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Posyandu\Vitamin.xaml">
+    <Page Include="Menus\Posyandu\DaftarVitamin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Posyandu\Imunisasi.xaml">
+    <Page Include="Menus\Posyandu\DaftarImunisasi.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Posyandu\DetailBalitaPosyandu.xaml">
+    <Page Include="Menus\Posyandu\DetailBalitaPosyandu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Posyandu\HomePosyandu.xaml">
+    <Page Include="Menus\Posyandu\HomePosyandu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Posyandu\IkutKegiatan.xaml">
+    <Page Include="Menus\Posyandu\IkutKegiatan.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Menu\Posyandu\PosyanduPosyandu.xaml">
+    <Page Include="Menus\Posyandu\PosyanduPosyandu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -240,22 +259,22 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu\Dinkes\HomeDinkes.xaml.cs">
+    <Compile Include="Menus\Dinkes\HomeDinkes.xaml.cs">
       <DependentUpon>HomeDinkes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dispencapil\DaftarBalita.xaml.cs">
+    <Compile Include="Menus\Dispencapil\DaftarBalita.xaml.cs">
       <DependentUpon>DaftarBalita.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Dispencapil\HomeDispencapil.xaml.cs">
+    <Compile Include="Menus\Dispencapil\HomeDispencapil.xaml.cs">
       <DependentUpon>HomeDispencapil.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\HasilCariPage.xaml.cs">
+    <Compile Include="Menus\HasilCariPage.xaml.cs">
       <DependentUpon>HasilCariPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\HomeMain.xaml.cs">
+    <Compile Include="Menus\HomeMain.xaml.cs">
       <DependentUpon>HomeMain.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menu\Posyandu\HomePosyandu.xaml.cs">
+    <Compile Include="Menus\Posyandu\HomePosyandu.xaml.cs">
       <DependentUpon>HomePosyandu.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -284,12 +303,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Bhm.Model\Bhm.Model.csproj">
-      <Project>{2FB2D519-9D5A-47BA-94EB-2A8A7422C9BB}</Project>
-      <Name>Bhm.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
