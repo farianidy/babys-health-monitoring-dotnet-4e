@@ -34,18 +34,34 @@ namespace Bhm.Presentation
 
 		private void bTambah_Click(object sender, System.Windows.RoutedEventArgs e)
 		{
+            string a =  scbDesa.SelectedValue.ToString();
+            string b = scbKec.SelectedValue.ToString();
+            string c = scbKab.SelectedValue.ToString();
+            string d = scbProv.SelectedValue.ToString();
+
+            a = a.Substring(37, a.Length - 37);
+            b = b.Substring(37, b.Length - 37);
+            c = c.Substring(37, c.Length - 37);
+            d = d.Substring(37, d.Length - 37);
+
             using (var session = NHibernateHelper.OpenSession())
             {
                 using (var transaction = session.BeginTransaction())
                 {
                     var posyandu = new Posyandu
                     {
-                        idPosyandu = Int32.Parse(tbIdPosyandu.Text),
+                        //idPosyandu = Int32.Parse(tbIdPosyandu.Text),
                         namaPosyandu = tbNamaPosyandu.Text,
-                        desaPosyandu = scbDesa.SelectedValue.ToString(),
-                        kecPosyandu = scbKec.SelectedValue.ToString(),
-                        kabPosyandu = scbKab.SelectedValue.ToString(),
-                        provPosyandu = scbProv.SelectedValue.ToString()
+                        desaPosyandu = a,
+                        kecPosyandu = b,
+                        kabPosyandu = c,
+                        provPosyandu = d
+
+                        //namaPosyandu = "Sehat Selalu",
+                        //desaPosyandu = "Tambak Rejo",
+                        //kecPosyandu = "Sedati",
+                        //kabPosyandu = "Sidoarjo",
+                        //provPosyandu = "Jawa Timur"
                     };
 
                     session.Save(posyandu);
