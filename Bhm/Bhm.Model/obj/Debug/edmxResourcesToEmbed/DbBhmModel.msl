@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbBhmModelStoreContainer" CdmEntityContainer="DbBhmEntities">
+    <EntitySetMapping Name="Ayahs">
+      <EntityTypeMapping TypeName="DbBhmModel.Ayah">
+        <MappingFragment StoreEntitySet="Ayah">
+          <ScalarProperty Name="idAyah" ColumnName="idAyah" />
+          <ScalarProperty Name="namaAyah" ColumnName="namaAyah" />
+          <ScalarProperty Name="pkjAyah" ColumnName="pkjAyah" />
+          <ScalarProperty Name="tlAyah" ColumnName="tlAyah" />
+          <ScalarProperty Name="alamatAyah" ColumnName="alamatAyah" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Balitas">
+      <EntityTypeMapping TypeName="DbBhmModel.Balita">
+        <MappingFragment StoreEntitySet="Balita">
+          <ScalarProperty Name="idBalita" ColumnName="idBalita" />
+          <ScalarProperty Name="idAyah" ColumnName="idAyah" />
+          <ScalarProperty Name="idIbu" ColumnName="idIbu" />
+          <ScalarProperty Name="idVitamin" ColumnName="idVitamin" />
+          <ScalarProperty Name="idImunisasi" ColumnName="idImunisasi" />
+          <ScalarProperty Name="namaBalita" ColumnName="namaBalita" />
+          <ScalarProperty Name="tlBalita" ColumnName="tlBalita" />
+          <ScalarProperty Name="alamatBalita" ColumnName="alamatBalita" />
+          <ScalarProperty Name="anakKe" ColumnName="anakKe" />
+          <ScalarProperty Name="jnsKelamin" ColumnName="jnsKelamin" />
+          <ScalarProperty Name="bbl" ColumnName="bbl" />
+          <ScalarProperty Name="tbl" ColumnName="tbl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ibus">
+      <EntityTypeMapping TypeName="DbBhmModel.Ibu">
+        <MappingFragment StoreEntitySet="Ibu">
+          <ScalarProperty Name="idIbu" ColumnName="idIbu" />
+          <ScalarProperty Name="namaIbu" ColumnName="namaIbu" />
+          <ScalarProperty Name="pkjIbu" ColumnName="pkjIbu" />
+          <ScalarProperty Name="tlIbu" ColumnName="tlIbu" />
+          <ScalarProperty Name="alamatIbu" ColumnName="alamatIbu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Imunisasis">
+      <EntityTypeMapping TypeName="DbBhmModel.Imunisasi">
+        <MappingFragment StoreEntitySet="Imunisasi">
+          <ScalarProperty Name="idImunisasi" ColumnName="idImunisasi" />
+          <ScalarProperty Name="hbo" ColumnName="hbo" />
+          <ScalarProperty Name="bcg_Polio1" ColumnName="bcg_Polio1" />
+          <ScalarProperty Name="dptHb1_Polio2" ColumnName="dptHb1_Polio2" />
+          <ScalarProperty Name="dptHb2_Polio2" ColumnName="dptHb2_Polio2" />
+          <ScalarProperty Name="dptHb3_Polio4" ColumnName="dptHb3_Polio4" />
+          <ScalarProperty Name="campak" ColumnName="campak" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kegiatans">
+      <EntityTypeMapping TypeName="DbBhmModel.Kegiatan">
+        <MappingFragment StoreEntitySet="Kegiatan">
+          <ScalarProperty Name="idKeg" ColumnName="idKeg" />
+          <ScalarProperty Name="idPosyandu" ColumnName="idPosyandu" />
+          <ScalarProperty Name="idBalita" ColumnName="idBalita" />
+          <ScalarProperty Name="tglPeriksa" ColumnName="tglPeriksa" />
+          <ScalarProperty Name="bb" ColumnName="bb" />
+          <ScalarProperty Name="tb" ColumnName="tb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pegawais">
+      <EntityTypeMapping TypeName="DbBhmModel.Pegawai">
+        <MappingFragment StoreEntitySet="Pegawai">
+          <ScalarProperty Name="idPgw" ColumnName="idPgw" />
+          <ScalarProperty Name="namaPgw" ColumnName="namaPgw" />
+          <ScalarProperty Name="instansi" ColumnName="instansi" />
+          <ScalarProperty Name="usernamePgw" ColumnName="usernamePgw" />
+          <ScalarProperty Name="passwordPgw" ColumnName="passwordPgw" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posyandus">
+      <EntityTypeMapping TypeName="DbBhmModel.Posyandu">
+        <MappingFragment StoreEntitySet="Posyandu">
+          <ScalarProperty Name="idPosyandu" ColumnName="idPosyandu" />
+          <ScalarProperty Name="namaPosyandu" ColumnName="namaPosyandu" />
+          <ScalarProperty Name="desaPosyandu" ColumnName="desaPosyandu" />
+          <ScalarProperty Name="kecPosyandu" ColumnName="kecPosyandu" />
+          <ScalarProperty Name="kabPosyandu" ColumnName="kabPosyandu" />
+          <ScalarProperty Name="provPosyandu" ColumnName="provPosyandu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vitamins">
+      <EntityTypeMapping TypeName="DbBhmModel.Vitamin">
+        <MappingFragment StoreEntitySet="Vitamin">
+          <ScalarProperty Name="idVitamin" ColumnName="idVitamin" />
+          <ScalarProperty Name="kapsulBiru" ColumnName="kapsulBiru" />
+          <ScalarProperty Name="kapsulMerah1" ColumnName="kapsulMerah1" />
+          <ScalarProperty Name="kapsulMerah2" ColumnName="kapsulMerah2" />
+          <ScalarProperty Name="kapsulMerah3" ColumnName="kapsulMerah3" />
+          <ScalarProperty Name="kapsulMerah4" ColumnName="kapsulMerah4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

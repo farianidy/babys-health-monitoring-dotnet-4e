@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dinkes.master.cs" Inherits="Bhm.Web.Dinkes" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Baby's Health Monitoring
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <%--<AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>--%>
+                    <LoggedInTemplate>
+                        Selamat Datang <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/DinasKes/Dinkes.aspx" Text="Beranda"/>
+                        <asp:MenuItem Text="Posyandu" >
+                            <asp:MenuItem Text="Lihat Posyandu" NavigateUrl="~/DinasKes/LihatPosyandu.aspx" />
+                            <asp:MenuItem Text="Tambah Posyandu" NavigateUrl="~/DinasKes/TambahPosyandu.aspx" />
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Laporan">
+                            <asp:MenuItem Text="Balita" NavigateUrl="~/DinasKes/LaporanBalita.aspx" />
+                            <asp:MenuItem Text="Gizi" NavigateUrl="~/DinasKes/LaporanGizi.aspx" />
+                        <asp:MenuItem Text="Keaktifan" NavigateUrl="~/DinasKes/LaporanKeaktifan.aspx" />
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Tentang Kami"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+        <div class="footer">
+            <p>Dibuat oleh Kelompok 4. Dewi, Ayu, Riski, Agnes, dan Fitri.</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

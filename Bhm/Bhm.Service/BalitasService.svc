@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Balitas.BalitasServiceImpl" CodeBehind="~/App_Code/BalitasService.cs" %>
