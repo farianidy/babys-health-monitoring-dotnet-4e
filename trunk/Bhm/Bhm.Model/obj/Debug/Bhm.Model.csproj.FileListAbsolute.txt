@@ -1,0 +1,6 @@
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Model\bin\Debug\Bhm.Model.dll.config
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Model\bin\Debug\Bhm.Model.dll
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Model\bin\Debug\Bhm.Model.pdb
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Model\obj\Debug\ResolveAssemblyReference.cache
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Model\obj\Debug\Bhm.Model.dll
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Model\obj\Debug\Bhm.Model.pdb

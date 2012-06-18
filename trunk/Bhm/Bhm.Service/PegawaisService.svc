@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Pegawais.PegawaisServiceImpl" CodeBehind="~/App_Code/PegawaisService.cs" %>

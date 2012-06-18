@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cdd38f3e-a7b6-45d0-9bca-7b2dfd2bb992" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Bhm.Service/PegawaisService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PegawaisService.xsd" MetadataType="Schema" ID="9580c1e9-36db-4131-979a-91b296543b1c" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PegawaisService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PegawaisService1.xsd" MetadataType="Schema" ID="8a9b8e48-d8bc-40c9-8997-3acecbd367cb" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PegawaisService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PegawaisService2.xsd" MetadataType="Schema" ID="29f25f20-7a60-476a-bf74-39135b261e37" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PegawaisService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PegawaisService3.xsd" MetadataType="Schema" ID="73bebee5-a48e-4f64-aa18-58eaa3703d77" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PegawaisService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PegawaisServiceImpl.wsdl" MetadataType="Wsdl" ID="eb97b33d-6119-4e3b-a764-7cdc3055bdb0" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PegawaisService.svc?wsdl" />
+    <MetadataFile FileName="PegawaisService.disco" MetadataType="Disco" ID="7b263f53-e3e8-4b29-82f5-94a5c78d8753" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PegawaisService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

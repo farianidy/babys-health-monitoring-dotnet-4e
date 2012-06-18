@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbBhmModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DbBhmEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Ayahs" EntityType="DbBhmModel.Ayah" />
+    <EntitySet Name="Balitas" EntityType="DbBhmModel.Balita" />
+    <EntitySet Name="Ibus" EntityType="DbBhmModel.Ibu" />
+    <EntitySet Name="Imunisasis" EntityType="DbBhmModel.Imunisasi" />
+    <EntitySet Name="Kegiatans" EntityType="DbBhmModel.Kegiatan" />
+    <EntitySet Name="Pegawais" EntityType="DbBhmModel.Pegawai" />
+    <EntitySet Name="Posyandus" EntityType="DbBhmModel.Posyandu" />
+    <EntitySet Name="Vitamins" EntityType="DbBhmModel.Vitamin" />
+    <AssociationSet Name="FK_Balita_PunyaAyah_Ayah" Association="DbBhmModel.FK_Balita_PunyaAyah_Ayah">
+      <End Role="Ayah" EntitySet="Ayahs" />
+      <End Role="Balita" EntitySet="Balitas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Balita_DapatImunisasi_Imunisasi" Association="DbBhmModel.FK_Balita_DapatImunisasi_Imunisasi">
+      <End Role="Imunisasi" EntitySet="Imunisasis" />
+      <End Role="Balita" EntitySet="Balitas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Balita_DapatVitamin_Vitamin" Association="DbBhmModel.FK_Balita_DapatVitamin_Vitamin">
+      <End Role="Vitamin" EntitySet="Vitamins" />
+      <End Role="Balita" EntitySet="Balitas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Balita_PunyaIbu_Ibu" Association="DbBhmModel.FK_Balita_PunyaIbu_Ibu">
+      <End Role="Ibu" EntitySet="Ibus" />
+      <End Role="Balita" EntitySet="Balitas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kegiatan_IkutKegiatan_Balita" Association="DbBhmModel.FK_Kegiatan_IkutKegiatan_Balita">
+      <End Role="Balita" EntitySet="Balitas" />
+      <End Role="Kegiatan" EntitySet="Kegiatans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Kegiatan_Diselenggarakan_Posyandu" Association="DbBhmModel.FK_Kegiatan_Diselenggarakan_Posyandu">
+      <End Role="Posyandu" EntitySet="Posyandus" />
+      <End Role="Kegiatan" EntitySet="Kegiatans" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Ayah">
+    <Key>
+      <PropertyRef Name="idAyah" />
+    </Key>
+    <Property Name="idAyah" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namaAyah" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="pkjAyah" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="tlAyah" Type="DateTime" />
+    <Property Name="alamatAyah" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Balitas" Relationship="DbBhmModel.FK_Balita_PunyaAyah_Ayah" FromRole="Ayah" ToRole="Balita" />
+  </EntityType>
+  <EntityType Name="Balita">
+    <Key>
+      <PropertyRef Name="idBalita" />
+    </Key>
+    <Property Name="idBalita" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idAyah" Type="Int32" Nullable="false" />
+    <Property Name="idIbu" Type="Int32" Nullable="false" />
+    <Property Name="idVitamin" Type="Int32" />
+    <Property Name="idImunisasi" Type="Int32" />
+    <Property Name="namaBalita" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="tlBalita" Type="DateTime" />
+    <Property Name="alamatBalita" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="anakKe" Type="Int32" />
+    <Property Name="jnsKelamin" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="bbl" Type="Double" />
+    <Property Name="tbl" Type="Double" />
+    <NavigationProperty Name="Ayah" Relationship="DbBhmModel.FK_Balita_PunyaAyah_Ayah" FromRole="Balita" ToRole="Ayah" />
+    <NavigationProperty Name="Imunisasi" Relationship="DbBhmModel.FK_Balita_DapatImunisasi_Imunisasi" FromRole="Balita" ToRole="Imunisasi" />
+    <NavigationProperty Name="Vitamin" Relationship="DbBhmModel.FK_Balita_DapatVitamin_Vitamin" FromRole="Balita" ToRole="Vitamin" />
+    <NavigationProperty Name="Ibu" Relationship="DbBhmModel.FK_Balita_PunyaIbu_Ibu" FromRole="Balita" ToRole="Ibu" />
+    <NavigationProperty Name="Kegiatans" Relationship="DbBhmModel.FK_Kegiatan_IkutKegiatan_Balita" FromRole="Balita" ToRole="Kegiatan" />
+  </EntityType>
+  <EntityType Name="Ibu">
+    <Key>
+      <PropertyRef Name="idIbu" />
+    </Key>
+    <Property Name="idIbu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namaIbu" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="pkjIbu" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="tlIbu" Type="DateTime" />
+    <Property Name="alamatIbu" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Balitas" Relationship="DbBhmModel.FK_Balita_PunyaIbu_Ibu" FromRole="Ibu" ToRole="Balita" />
+  </EntityType>
+  <EntityType Name="Imunisasi">
+    <Key>
+      <PropertyRef Name="idImunisasi" />
+    </Key>
+    <Property Name="idImunisasi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="hbo" Type="DateTime" />
+    <Property Name="bcg_Polio1" Type="DateTime" />
+    <Property Name="dptHb1_Polio2" Type="DateTime" />
+    <Property Name="dptHb2_Polio2" Type="DateTime" />
+    <Property Name="dptHb3_Polio4" Type="DateTime" />
+    <Property Name="campak" Type="DateTime" />
+    <NavigationProperty Name="Balitas" Relationship="DbBhmModel.FK_Balita_DapatImunisasi_Imunisasi" FromRole="Imunisasi" ToRole="Balita" />
+  </EntityType>
+  <EntityType Name="Kegiatan">
+    <Key>
+      <PropertyRef Name="idKeg" />
+    </Key>
+    <Property Name="idKeg" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPosyandu" Type="Int32" Nullable="false" />
+    <Property Name="idBalita" Type="Int32" Nullable="false" />
+    <Property Name="tglPeriksa" Type="DateTime" />
+    <Property Name="bb" Type="Double" />
+    <Property Name="tb" Type="Double" />
+    <NavigationProperty Name="Balita" Relationship="DbBhmModel.FK_Kegiatan_IkutKegiatan_Balita" FromRole="Kegiatan" ToRole="Balita" />
+    <NavigationProperty Name="Posyandu" Relationship="DbBhmModel.FK_Kegiatan_Diselenggarakan_Posyandu" FromRole="Kegiatan" ToRole="Posyandu" />
+  </EntityType>
+  <EntityType Name="Pegawai">
+    <Key>
+      <PropertyRef Name="idPgw" />
+    </Key>
+    <Property Name="idPgw" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namaPgw" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="instansi" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="usernamePgw" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="passwordPgw" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Posyandu">
+    <Key>
+      <PropertyRef Name="idPosyandu" />
+    </Key>
+    <Property Name="idPosyandu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="namaPosyandu" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="desaPosyandu" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="kecPosyandu" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="kabPosyandu" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="provPosyandu" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Kegiatans" Relationship="DbBhmModel.FK_Kegiatan_Diselenggarakan_Posyandu" FromRole="Posyandu" ToRole="Kegiatan" />
+  </EntityType>
+  <EntityType Name="Vitamin">
+    <Key>
+      <PropertyRef Name="idVitamin" />
+    </Key>
+    <Property Name="idVitamin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kapsulBiru" Type="DateTime" />
+    <Property Name="kapsulMerah1" Type="DateTime" />
+    <Property Name="kapsulMerah2" Type="DateTime" />
+    <Property Name="kapsulMerah3" Type="DateTime" />
+    <Property Name="kapsulMerah4" Type="DateTime" />
+    <NavigationProperty Name="Balitas" Relationship="DbBhmModel.FK_Balita_DapatVitamin_Vitamin" FromRole="Vitamin" ToRole="Balita" />
+  </EntityType>
+  <Association Name="FK_Balita_PunyaAyah_Ayah">
+    <End Role="Ayah" Type="DbBhmModel.Ayah" Multiplicity="1" />
+    <End Role="Balita" Type="DbBhmModel.Balita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ayah">
+        <PropertyRef Name="idAyah" />
+      </Principal>
+      <Dependent Role="Balita">
+        <PropertyRef Name="idAyah" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Balita_DapatImunisasi_Imunisasi">
+    <End Role="Imunisasi" Type="DbBhmModel.Imunisasi" Multiplicity="0..1" />
+    <End Role="Balita" Type="DbBhmModel.Balita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Imunisasi">
+        <PropertyRef Name="idImunisasi" />
+      </Principal>
+      <Dependent Role="Balita">
+        <PropertyRef Name="idImunisasi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Balita_DapatVitamin_Vitamin">
+    <End Role="Vitamin" Type="DbBhmModel.Vitamin" Multiplicity="0..1" />
+    <End Role="Balita" Type="DbBhmModel.Balita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vitamin">
+        <PropertyRef Name="idVitamin" />
+      </Principal>
+      <Dependent Role="Balita">
+        <PropertyRef Name="idVitamin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Balita_PunyaIbu_Ibu">
+    <End Role="Ibu" Type="DbBhmModel.Ibu" Multiplicity="1" />
+    <End Role="Balita" Type="DbBhmModel.Balita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ibu">
+        <PropertyRef Name="idIbu" />
+      </Principal>
+      <Dependent Role="Balita">
+        <PropertyRef Name="idIbu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kegiatan_IkutKegiatan_Balita">
+    <End Role="Balita" Type="DbBhmModel.Balita" Multiplicity="1" />
+    <End Role="Kegiatan" Type="DbBhmModel.Kegiatan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Balita">
+        <PropertyRef Name="idBalita" />
+      </Principal>
+      <Dependent Role="Kegiatan">
+        <PropertyRef Name="idBalita" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Kegiatan_Diselenggarakan_Posyandu">
+    <End Role="Posyandu" Type="DbBhmModel.Posyandu" Multiplicity="1" />
+    <End Role="Kegiatan" Type="DbBhmModel.Kegiatan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posyandu">
+        <PropertyRef Name="idPosyandu" />
+      </Principal>
+      <Dependent Role="Kegiatan">
+        <PropertyRef Name="idPosyandu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
