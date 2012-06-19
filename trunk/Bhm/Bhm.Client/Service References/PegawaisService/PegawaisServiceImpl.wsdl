@@ -20,6 +20,12 @@
   <wsdl:message name="IPegawaisService_GetPegawai_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetPegawaiResponse" />
   </wsdl:message>
+  <wsdl:message name="IPegawaisService_CheckLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLogin" />
+  </wsdl:message>
+  <wsdl:message name="IPegawaisService_CheckLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLoginResponse" />
+  </wsdl:message>
   <wsdl:portType name="IPegawaisService">
     <wsdl:operation name="ListPegawai">
       <wsdl:input wsaw:Action="http://tempuri.org/IPegawaisService/ListPegawai" message="tns:IPegawaisService_ListPegawai_InputMessage" />
@@ -28,6 +34,10 @@
     <wsdl:operation name="GetPegawai">
       <wsdl:input wsaw:Action="http://tempuri.org/IPegawaisService/GetPegawai" message="tns:IPegawaisService_GetPegawai_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IPegawaisService/GetPegawaiResponse" message="tns:IPegawaisService_GetPegawai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPegawaisService/CheckLogin" message="tns:IPegawaisService_CheckLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPegawaisService/CheckLoginResponse" message="tns:IPegawaisService_CheckLogin_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IPegawaisService" type="tns:IPegawaisService">
@@ -43,6 +53,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetPegawai">
       <soap:operation soapAction="http://tempuri.org/IPegawaisService/GetPegawai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <soap:operation soapAction="http://tempuri.org/IPegawaisService/CheckLogin" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -131,6 +131,9 @@ namespace Bhm.Client.PegawaisService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPegawaisService/GetPegawai", ReplyAction="http://tempuri.org/IPegawaisService/GetPegawaiResponse")]
         Bhm.Client.PegawaisService.PegawaiData GetPegawai(string nama);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPegawaisService/CheckLogin", ReplyAction="http://tempuri.org/IPegawaisService/CheckLoginResponse")]
+        Bhm.Client.PegawaisService.PegawaiData CheckLogin(string username, string password);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -166,6 +169,10 @@ namespace Bhm.Client.PegawaisService {
         
         public Bhm.Client.PegawaisService.PegawaiData GetPegawai(string nama) {
             return base.Channel.GetPegawai(nama);
+        }
+        
+        public Bhm.Client.PegawaisService.PegawaiData CheckLogin(string username, string password) {
+            return base.Channel.CheckLogin(username, password);
         }
     }
 }

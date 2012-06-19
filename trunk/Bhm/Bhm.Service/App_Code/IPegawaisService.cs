@@ -18,6 +18,14 @@ namespace Pegawais
         // Ambil detail 1 pegawai dari nama
         [OperationContract]
         PegawaiData GetPegawai(string nama);
+
+        // Login Pegawai
+        [OperationContract]
+        PegawaiData CheckLogin(string username, string password);
+
+        // Tambah Pegawai
+        [OperationContract]
+        void InsertPegawai(string nama, string instansi, string username, string password, bool isAdmin);
     }
 
     [DataContract]
@@ -37,5 +45,8 @@ namespace Pegawais
 
         [DataMember]
         public string passwordPgw { get; set; }
+
+        [DataMember]
+        public bool isAdmin { get; set; }
     }
 }

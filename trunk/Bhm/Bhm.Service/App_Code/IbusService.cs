@@ -5,10 +5,26 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-// NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "IbusService" in code, svc and config file together.
-public class IbusService : IIbusService
+using Bhm.Model;
+
+namespace Ibus
 {
-	public void DoWork()
-	{
-	}
+    public class IbusServiceImpl : IIbusService
+    {
+        public void InsertIbu(string nama, string pkj, DateTime tl, string alamat)
+        {
+            using (DbBhmEntities dc = new DbBhmEntities())
+            {
+                Ibu ibu = new Ibu();
+
+                ibu.namaIbu = nama;
+                ibu.pkjIbu = pkj;
+                ibu.tlIbu = tl;
+                ibu.alamatIbu = alamat;
+
+                dc.Ibus.AddObject(ibu);
+                dc.SaveChanges();
+            }
+        }
+    }
 }

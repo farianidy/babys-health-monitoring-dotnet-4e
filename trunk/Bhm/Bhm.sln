@@ -31,6 +31,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bhm.Client", "Bhm.Client\Bh
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bhm.Web", "Bhm.Web\Bhm.Web.csproj", "{25813F5E-0DC9-4DCF-8B92-49C2D78141E6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DD5D64B1-08D2-4EB3-A3DE-991D73F8FD52} = {DD5D64B1-08D2-4EB3-A3DE-991D73F8FD52}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

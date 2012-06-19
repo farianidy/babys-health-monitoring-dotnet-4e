@@ -13,6 +13,15 @@ namespace Bhm.Web.DinasKes {
     public partial class TambahPegawaiDinkes {
         
         /// <summary>
+        /// successNotificatonPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel successNotificatonPanel;
+        
+        /// <summary>
         /// ErrorMessage control.
         /// </summary>
         /// <remarks>
@@ -193,12 +202,12 @@ namespace Bhm.Web.DinasKes {
         protected global::System.Web.UI.WebControls.RadioButton AdminTidak;
         
         /// <summary>
-        /// CreateUserButton control.
+        /// TambahButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CreateUserButton;
+        protected global::System.Web.UI.WebControls.Button TambahButton;
     }
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f9db37a1-21ed-4776-9e7f-b0cbe1c28c55" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Bhm.Service/PosyandusService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PosyandusService.xsd" MetadataType="Schema" ID="942d5543-701a-4738-a05a-d311fc482e87" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PosyandusService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PosyandusService1.xsd" MetadataType="Schema" ID="065e90c7-a05e-49fb-af43-42fbb0e0eb2f" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PosyandusService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PosyandusService2.xsd" MetadataType="Schema" ID="85933372-c928-4580-841c-e0a16178efc0" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PosyandusService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PosyandusServiceImpl.wsdl" MetadataType="Wsdl" ID="042f7fce-e8f6-4880-b66e-05eed2f5d45d" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PosyandusService.svc?wsdl" />
+    <MetadataFile FileName="PosyandusService.disco" MetadataType="Disco" ID="5b5705b6-636d-4929-8b6c-a92847230d37" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PosyandusService.svc?disco" />
+    <MetadataFile FileName="PosyandusService3.xsd" MetadataType="Schema" ID="5b5891e7-21a1-407b-b128-3f2e05f69504" SourceId="1" SourceUrl="http://localhost/Bhm.Service/PosyandusService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

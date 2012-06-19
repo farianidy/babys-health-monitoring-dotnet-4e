@@ -37,7 +37,6 @@
                             <asp:MenuItem Text="Lihat Data" NavigateUrl="~/Dispen/LihatData.aspx" />
                             <asp:MenuItem Text="Pendaftaran" NavigateUrl="~/Dispen/Pendaftaran.aspx" />
                         </asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Tentang Kami"/>
                     </Items>
                 </asp:Menu>
             </div>

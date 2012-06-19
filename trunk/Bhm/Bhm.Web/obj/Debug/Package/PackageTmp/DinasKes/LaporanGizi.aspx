@@ -4,6 +4,18 @@
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Laporan Gizi Balita</h2>
+    <div class="accountInfo">
+        <fieldset class="register">
+            <legend>Pilih Kecamatan</legend>
+            <p>
+                <asp:DropDownList ID="KecamatanDropDown" runat="server">
+                </asp:DropDownList>
+            </p>
+            <p>
+                <asp:Button ID="FindKecamatanButton" runat="server" Text="Cari" />
+            </p>
+        </fieldset>
+    </div>
     <table>
     <tr>
     <td>Kecamatan</td>
