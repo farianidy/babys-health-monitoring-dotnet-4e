@@ -17,6 +17,21 @@ namespace Posyandus
         // Ambil detail 1 posyandu dari nama
         [OperationContract]
         PosyanduData GetPosyandu(string nama);
+
+        // Ambil detail semua data posyandu
+        [OperationContract]
+        PosyanduData[] GetAllPosyandu();
+
+        // Ambil kecamatan di semua posyandu
+        [OperationContract]
+        List<string> ListKecamatan();
+
+        [OperationContract]
+        void InsertPosyandu(string nama, string desa, string kec, string kab, string prov);
+
+        // Update posyandu
+        [OperationContract]
+        void UpdatePosyandu(int id, string nama, string desa, string kec, string kab, string prov);
     }
 
     [DataContract]

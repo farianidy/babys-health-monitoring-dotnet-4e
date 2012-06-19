@@ -113,6 +113,7 @@
     <Property Name="instansi" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
     <Property Name="usernamePgw" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
     <Property Name="passwordPgw" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Type="Boolean" Name="isAdmin" Nullable="false" />
   </EntityType>
   <EntityType Name="Posyandu">
     <Key>

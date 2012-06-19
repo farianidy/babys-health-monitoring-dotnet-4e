@@ -3,29 +3,31 @@
   <publishProfile publishUrl="C:\inetpub\wwwroot\Bhm.Web" deleteExistingFiles="False" ftpAnonymousLogin="True" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FTP" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
     <file relUrl="bin/ru/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="Dispen/Pendaftaran.aspx" publishTime="06/18/2012 14:59:03" />
-    <file relUrl="Dispencapil.Master" publishTime="06/18/2012 15:33:32" />
-    <file relUrl="bin/Bhm.Web.pdb" publishTime="06/18/2012 15:26:04" />
+    <file relUrl="Dispencapil.Master" publishTime="06/18/2012 19:09:03" />
+    <file relUrl="HomeMain.aspx" publishTime="06/17/2012 22:02:38" />
+    <file relUrl="bin/Bhm.Web.pdb" publishTime="06/19/2012 12:27:45" />
     <file relUrl="Global.asax" publishTime="06/17/2012 12:33:24" />
-    <file relUrl="Posyandu.Master" publishTime="06/18/2012 15:32:59" />
-    <file relUrl="Site.Master" publishTime="06/17/2012 12:43:28" />
-    <file relUrl="Styles/Site.css" publishTime="06/17/2012 12:33:24" />
+    <file relUrl="Posyandu.Master" publishTime="06/18/2012 19:09:13" />
+    <file relUrl="Site.Master" publishTime="06/19/2012 08:26:55" />
+    <file relUrl="Styles/Site.css" publishTime="06/19/2012 10:59:38" />
+    <file relUrl="bin/ko/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="bin/AntiXSSLibrary.dll" publishTime="06/18/2012 11:27:49" />
-    <file relUrl="bin/Bhm.Web.dll" publishTime="06/18/2012 15:26:06" />
+    <file relUrl="bin/Bhm.Web.dll" publishTime="06/19/2012 12:27:45" />
     <file relUrl="About.aspx" publishTime="06/17/2012 12:47:28" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="06/17/2012 12:33:24" />
     <file relUrl="DinasKes/LaporanKeaktifan.aspx" publishTime="06/18/2012 15:02:45" />
     <file relUrl="bin/hi/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
-    <file relUrl="DinasKes/LihatPosyandu.aspx" publishTime="06/18/2012 15:03:06" />
-    <file relUrl="Pos/Posyandu.aspx" publishTime="06/18/2012 15:07:25" />
+    <file relUrl="bin/ja/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="bin/zh-CHS/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:50" />
+    <file relUrl="bin/fr/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="Pos/KMS.aspx" publishTime="06/18/2012 15:06:51" />
-    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="06/17/2012 12:33:24" />
-    <file relUrl="Pos/IkutKegiatan.aspx" publishTime="06/18/2012 15:08:41" />
-    <file relUrl="DinasKes/LaporanGizi.aspx" publishTime="06/18/2012 15:02:27" />
+    <file relUrl="Pos/PosyanduPosyandu.aspx" publishTime="06/18/2012 15:07:55" />
+    <file relUrl="BalitaKMS.aspx" publishTime="06/19/2012 04:49:00" />
+    <file relUrl="DinasKes/LaporanGizi.aspx" publishTime="06/19/2012 12:08:04" />
     <file relUrl="Account/Web.config" publishTime="06/17/2012 12:33:24" />
     <file relUrl="Account/Register.aspx" publishTime="06/18/2012 15:24:44" />
-    <file relUrl="Pos/PosyanduPosyandu.aspx" publishTime="06/18/2012 15:07:55" />
-    <file relUrl="Account/Login.aspx" publishTime="06/17/2012 13:40:40" />
+    <file relUrl="bin/pt/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
+    <file relUrl="Account/Login.aspx" publishTime="06/18/2012 18:30:28" />
     <file relUrl="bin/AjaxControlToolkit.pdb" publishTime="06/18/2012 11:27:49" />
     <file relUrl="bin/de/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="packages.config" publishTime="06/18/2012 11:28:13" />
@@ -33,32 +35,32 @@
     <file relUrl="bin/AjaxControlToolkit.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="Pos/Vitamin.aspx" publishTime="06/18/2012 15:08:19" />
     <file relUrl="bin/zh-CHT/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:50" />
-    <file relUrl="DinasKes/TambahPosyandu.aspx" publishTime="06/18/2012 15:03:44" />
-    <file relUrl="Default.aspx" publishTime="06/17/2012 12:39:42" />
+    <file relUrl="DinasKes/TambahPosyandu.aspx" publishTime="06/19/2012 11:56:32" />
+    <file relUrl="Default.aspx" publishTime="06/19/2012 04:36:21" />
     <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="06/18/2012 05:55:18" />
-    <file relUrl="Pos/Balita.aspx" publishTime="06/18/2012 15:08:46" />
-    <file relUrl="bin/he/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
+    <file relUrl="Pos/IkutKegiatan.aspx" publishTime="06/18/2012 15:08:41" />
     <file relUrl="DinasKes/Dinkes.aspx" publishTime="06/18/2012 15:01:46" />
-    <file relUrl="bin/fr/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
+    <file relUrl="bin/he/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="DinasKes/LaporanBalita.aspx" publishTime="06/18/2012 15:02:08" />
     <file relUrl="Pos/DetailPosyandu.aspx" publishTime="06/18/2012 15:05:08" />
     <file relUrl="bin/nl/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="bin/tr-TR/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:50" />
-    <file relUrl="Dinkes.Master" publishTime="06/18/2012 15:33:17" />
+    <file relUrl="Dinkes.Master" publishTime="06/18/2012 19:08:32" />
     <file relUrl="bin/it/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="Account/ChangePassword.aspx" publishTime="06/18/2012 05:59:10" />
-    <file relUrl="Dispen/LihatData.aspx" publishTime="06/18/2012 14:59:11" />
+    <file relUrl="DinasKes/TambahPegawaiDinkes.aspx" publishTime="06/19/2012 11:56:17" />
     <file relUrl="bin/SanitizerProviders.dll" publishTime="06/18/2012 11:27:50" />
-    <file relUrl="Web.config" publishTime="06/18/2012 15:20:22" />
+    <file relUrl="bin/es/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
+    <file relUrl="Web.config" publishTime="06/19/2012 04:24:19" />
     <file relUrl="Pos/Imunisasi.aspx" publishTime="06/18/2012 15:08:35" />
     <file relUrl="bin/cs/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="bin/HtmlSanitizationLibrary.dll" publishTime="06/18/2012 11:27:50" />
     <file relUrl="bin/ar/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
     <file relUrl="Dispen/Dispencapil.aspx" publishTime="06/18/2012 14:59:25" />
-    <file relUrl="HomeMain.aspx" publishTime="06/17/2012 22:02:38" />
-    <file relUrl="bin/ko/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
-    <file relUrl="bin/ja/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
-    <file relUrl="bin/pt/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
-    <file relUrl="bin/es/AjaxControlToolkit.resources.dll" publishTime="06/18/2012 11:27:49" />
+    <file relUrl="Pos/Balita.aspx" publishTime="06/18/2012 15:08:46" />
+    <file relUrl="Dispen/LihatData.aspx" publishTime="06/18/2012 14:59:11" />
+    <file relUrl="DinasKes/LihatPosyandu.aspx" publishTime="06/19/2012 11:14:44" />
+    <file relUrl="Pos/Posyandu.aspx" publishTime="06/18/2012 15:07:25" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="06/17/2012 12:33:24" />
   </publishProfile>
 </publishData>

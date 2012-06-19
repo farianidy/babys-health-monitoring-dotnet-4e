@@ -70,31 +70,51 @@ namespace Balitas
             return balitaData;
         }
 
-        public bool insertBalita()
+        public void InsertBalita(int idAyah, int idIbu, string nama, DateTime tl, string alamat, int anak,
+            string jk, double bbl, double tbl)
         {
             using (DbBhmEntities dc = new DbBhmEntities())
             {
-                Balita bal = new Balita();
+                Balita balita = new Balita();
 
-                bal.idBalita = 123;
-                bal.idAyah = 456;
-                bal.idIbu = 789;
-                bal.idVitamin = 111;
-                bal.idImunisasi = 222;
-                bal.namaBalita = "Fitri";
-                bal.tlBalita = DateTime.Now;
-                bal.alamatBalita = "Bontang";
-                bal.anakKe = 1;
-                bal.jnsKelamin = "P";
-                bal.bbl = 3;
-                bal.tbl = 50;
+                balita.idAyah = idAyah;
+                balita.idIbu = idIbu;
+                balita.idVitamin = null;
+                balita.idImunisasi = null;
+                balita.namaBalita = nama;
+                balita.tlBalita = tl;
+                balita.alamatBalita = alamat;
+                balita.anakKe = anak;
+                balita.jnsKelamin = jk;
+                balita.bbl = bbl;
+                balita.tbl = tbl;
 
-                dc.Balitas.AddObject(bal);
+                dc.Balitas.AddObject(balita);
                 dc.SaveChanges();
             }
-
-            return true;
         }
 
+        public void UpdateBalita(int id, int idAyah, int idIbu, int idVit, int idImun, string nama, DateTime tl, string alamat, int anak,
+            string jk, double bbl, double tbl)
+        {
+            using (DbBhmEntities db = new DbBhmEntities())
+            {
+                Balita balita = db.Balitas.Single(p => p.idBalita == id);
+
+                balita.idAyah = idAyah;
+                balita.idIbu = idIbu;
+                balita.idVitamin = idVit;
+                balita.idImunisasi = idImun;
+                balita.namaBalita = nama;
+                balita.tlBalita = tl;
+                balita.alamatBalita = alamat;
+                balita.anakKe = anak;
+                balita.jnsKelamin = jk;
+                balita.bbl = bbl;
+                balita.tbl = tbl;
+
+                db.SaveChanges();
+            }
+        }
     }
 }

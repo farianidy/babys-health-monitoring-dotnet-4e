@@ -32,6 +32,9 @@
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Beranda"/>
+                        <asp:MenuItem Text="Balita">
+                            <asp:MenuItem Text="KMS" NavigateUrl="~/BalitaKMS.aspx" />
+                        </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="Tentang Kami"/>
                     </Items>
                 </asp:Menu>

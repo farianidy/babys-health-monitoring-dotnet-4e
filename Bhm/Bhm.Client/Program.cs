@@ -31,6 +31,14 @@ namespace Bhm.Client
             Console.WriteLine("Password: {0}", pegawai.passwordPgw);
             Console.WriteLine();
 
+            PegawaiData pegawaiLogin = proxyPegawai.CheckLogin("yati", "yati");
+            Console.WriteLine("ID: {0}", pegawaiLogin.idPgw);
+            Console.WriteLine("Nama: {0}", pegawaiLogin.namaPgw);
+            Console.WriteLine("Instansi: {0}", pegawaiLogin.instansi);
+            Console.WriteLine("Username: {0}", pegawaiLogin.usernamePgw);
+            Console.WriteLine("Password: {0}", pegawaiLogin.passwordPgw);
+            Console.WriteLine();
+
             proxyPegawai.Close();
 
             //PosyandusServiceClient proxyPosyandu = new PosyandusServiceClient();

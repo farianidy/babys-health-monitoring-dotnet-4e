@@ -103,6 +103,7 @@
     <Property Name="instansi" Type="varchar" MaxLength="30" />
     <Property Name="usernamePgw" Type="varchar" MaxLength="15" />
     <Property Name="passwordPgw" Type="varchar" MaxLength="32" />
+    <Property Name="isAdmin" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="Posyandu">
     <Key>

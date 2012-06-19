@@ -20,7 +20,13 @@ namespace Balitas
 
         // Tambah balita
         [OperationContract]
-        bool insertBalita();
+        void InsertBalita(int idAyah, int idIbu, string nama, DateTime tl, string alamat, int anak, string jk,
+            double bbl, double tbl);
+
+        // Update balita
+        [OperationContract]
+        void UpdateBalita(int id, int idAyah, int idIbu, int idVit, int idImun, string nama, DateTime tl, string alamat, int anak, string jk,
+            double bbl, double tbl);
     }
 
     [DataContract]
@@ -57,9 +63,9 @@ namespace Balitas
         public string jnsKelamin { get; set; }
 
         [DataMember]
-        public float bbl { get; set; }
+        public double bbl { get; set; }
 
         [DataMember]
-        public float tbl { get; set; }
+        public double tbl { get; set; }
     }
 }

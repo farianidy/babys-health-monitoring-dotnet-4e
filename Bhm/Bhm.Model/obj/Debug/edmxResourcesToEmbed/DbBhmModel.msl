@@ -69,6 +69,7 @@
     <EntitySetMapping Name="Pegawais">
       <EntityTypeMapping TypeName="DbBhmModel.Pegawai">
         <MappingFragment StoreEntitySet="Pegawai">
+          <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
           <ScalarProperty Name="idPgw" ColumnName="idPgw" />
           <ScalarProperty Name="namaPgw" ColumnName="namaPgw" />
           <ScalarProperty Name="instansi" ColumnName="instansi" />

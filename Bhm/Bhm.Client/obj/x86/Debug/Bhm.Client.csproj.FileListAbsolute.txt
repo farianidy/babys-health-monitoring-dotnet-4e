@@ -1,6 +1,1 @@
 D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Client\bin\Debug\Bhm.Client.exe.config
-D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Client\bin\Debug\Bhm.Client.exe
-D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Client\bin\Debug\Bhm.Client.pdb
-D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Client\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Client\obj\x86\Debug\Bhm.Client.exe
-D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Client\obj\x86\Debug\Bhm.Client.pdb

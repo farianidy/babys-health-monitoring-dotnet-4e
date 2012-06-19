@@ -40,7 +40,6 @@
                             <asp:MenuItem NavigateUrl="~/Pos/KMS.aspx" Text="KMS" />
                         </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/Pos/PosyanduPosyandu.aspx" Text="Posyandu" />
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Tentang Kami"/>
                     </Items>
                 </asp:Menu>
             </div>
