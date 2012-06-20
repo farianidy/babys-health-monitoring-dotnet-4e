@@ -7,10 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bhm.Web.Posyandu {
+namespace Bhm.Web.Pos {
     
     
     public partial class IkutKegiatan {
+        
+        /// <summary>
+        /// successNotificatonPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel successNotificatonPanel;
         
         /// <summary>
         /// ErrorMessage control.
@@ -22,13 +31,13 @@ namespace Bhm.Web.Posyandu {
         protected global::System.Web.UI.WebControls.Literal ErrorMessage;
         
         /// <summary>
-        /// RegisterUserValidationSummary control.
+        /// TambahAkunValidationSummary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary RegisterUserValidationSummary;
+        protected global::System.Web.UI.WebControls.ValidationSummary TambahAkunValidationSummary;
         
         /// <summary>
         /// NameLabel control.
@@ -67,31 +76,22 @@ namespace Bhm.Web.Posyandu {
         protected global::System.Web.UI.WebControls.Label TanggalLabel;
         
         /// <summary>
-        /// TglLahirBalita control.
+        /// Tanggal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TglLahirBalita;
+        protected global::System.Web.UI.WebControls.Calendar Tanggal;
         
         /// <summary>
-        /// BalitaCalendarExtender control.
+        /// RequiredFieldValidator3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.CalendarExtender BalitaCalendarExtender;
-        
-        /// <summary>
-        /// TanggalRequired control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator TanggalRequired;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
         /// BeratLabel control.
@@ -112,22 +112,13 @@ namespace Bhm.Web.Posyandu {
         protected global::System.Web.UI.WebControls.TextBox Berat;
         
         /// <summary>
-        /// BeratRequired control.
+        /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator BeratRequired;
-        
-        /// <summary>
-        /// BeratValidator control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator BeratValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
         /// TinggiLabel control.
@@ -148,30 +139,21 @@ namespace Bhm.Web.Posyandu {
         protected global::System.Web.UI.WebControls.TextBox Tinggi;
         
         /// <summary>
-        /// TinggiRequired control.
+        /// RequiredFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator TinggiRequired;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// TinggiValidator control.
+        /// TambahButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator TinggiValidator;
-        
-        /// <summary>
-        /// IkutKegiatanButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button IkutKegiatanButton;
+        protected global::System.Web.UI.WebControls.Button TambahButton;
     }
 }
