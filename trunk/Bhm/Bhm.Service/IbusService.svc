@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Ibus.IbusServiceImpl" CodeBehind="~/App_Code/IbusService.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="IbusServiceImpl.IbusService" CodeBehind="~/App_Code/IbusService.cs" %>

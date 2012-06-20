@@ -27,6 +27,9 @@ namespace Balitas
         [OperationContract]
         void UpdateBalita(int id, int idAyah, int idIbu, int idVit, int idImun, string nama, DateTime tl, string alamat, int anak, string jk,
             double bbl, double tbl);
+
+        [OperationContract]
+        BalitaData dataBalita(string namaBalita, string namaAyah, string namaIbu);
     }
 
     [DataContract]

@@ -463,6 +463,15 @@ namespace Bhm.Web.Dispen {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator BBLRequired;
         
         /// <summary>
+        /// BBLValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator BBLValidator;
+        
+        /// <summary>
         /// TBLLabel control.
         /// </summary>
         /// <remarks>
@@ -488,6 +497,15 @@ namespace Bhm.Web.Dispen {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator TBLRequired;
+        
+        /// <summary>
+        /// TBLValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator TBLValidator;
         
         /// <summary>
         /// TambahButton control.

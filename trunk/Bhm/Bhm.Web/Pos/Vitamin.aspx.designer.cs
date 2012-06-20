@@ -7,72 +7,153 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bhm.Web.Pos {
+namespace Bhm.Web.Posyandu {
     
     
     public partial class Vitamin {
         
         /// <summary>
-        /// TextBox1 control.
+        /// ErrorMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.Literal ErrorMessage;
         
         /// <summary>
-        /// Calendar1 control.
+        /// RegisterUserValidationSummary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.ValidationSummary RegisterUserValidationSummary;
         
         /// <summary>
-        /// Calendar2 control.
+        /// NameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar2;
+        protected global::System.Web.UI.WebControls.Label NameLabel;
         
         /// <summary>
-        /// Calendar3 control.
+        /// Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar3;
+        protected global::System.Web.UI.WebControls.TextBox Name;
         
         /// <summary>
-        /// Calendar4 control.
+        /// NameRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NameRequired;
         
         /// <summary>
-        /// Calendar5 control.
+        /// BiruLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar5;
+        protected global::System.Web.UI.WebControls.Label BiruLabel;
         
         /// <summary>
-        /// Simpan control.
+        /// Biru control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Simpan;
+        protected global::System.Web.UI.WebControls.Calendar Biru;
+        
+        /// <summary>
+        /// Merah1Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Merah1Label;
+        
+        /// <summary>
+        /// Merah1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Merah1;
+        
+        /// <summary>
+        /// Merah2Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Merah2Label;
+        
+        /// <summary>
+        /// Merah2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Merah2;
+        
+        /// <summary>
+        /// Merah3Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Merah3Label;
+        
+        /// <summary>
+        /// Merah3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Merah3;
+        
+        /// <summary>
+        /// Merah4Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Merah4Label;
+        
+        /// <summary>
+        /// Merah4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Merah4;
+        
+        /// <summary>
+        /// ImunisasiButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ImunisasiButton;
     }
 }

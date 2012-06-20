@@ -116,5 +116,45 @@ namespace Balitas
                 db.SaveChanges();
             }
         }
+
+        public BalitaData dataBalita(string namaBalita, string namaAyah, string namaIbu)
+        {
+            BalitaData balitaData = null;
+
+            try
+            {
+                using (DbBhmEntities db = new DbBhmEntities())
+                {
+                    Balita matchingBalita = db.Balitas.First(
+                        p => String.Compare(p.namaBalita, namaBalita) == 0);
+                    Ayah matchingAyah = db.Ayahs.First(
+                        p => String.Compare(p.namaAyah, namaAyah) == 0);
+                    Ibu matchingIbu = db.Ibus.First(
+                        p => String.Compare(p.namaIbu, namaIbu) == 0);
+
+
+                    balitaData = new BalitaData()
+                    {
+                        idBalita = matchingBalita.idBalita,
+                        idAyah = matchingBalita.idAyah,
+                        idIbu = matchingBalita.idIbu,
+                        namaBalita = matchingBalita.namaBalita,
+                        //tlBalita = matchingBalita.tlBalita,
+                        alamatBalita = matchingBalita.alamatBalita,
+                        //anakKe = matchingBalita.anakKe,
+                        jnsKelamin = matchingBalita.jnsKelamin,
+                        //bbl = matchingBalita.bbl,
+                        //tbl = matchingBalita.tbl,
+                    };
+                }
+            }
+
+            catch
+            {
+                // Ignore exceptions
+            }
+
+            return balitaData;
+        }
     }
 }

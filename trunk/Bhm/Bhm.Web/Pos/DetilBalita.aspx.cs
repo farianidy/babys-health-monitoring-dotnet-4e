@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using Bhm.Web.BalitasService;
+
 namespace Bhm.Web.Pos
 {
     public partial class DetilBalita : System.Web.UI.Page
@@ -18,6 +20,12 @@ namespace Bhm.Web.Pos
             Balita.Text = namaBalita;
             Ayah.Text = namaAyah;
             Ibu.Text = namaIbu;
+
+            BalitasServiceClient proxyBalita = new BalitasServiceClient();
+
+            BalitaData user = proxyBalita.dataBalita(Balita.Text, Ayah.Text, Ibu.Text);
+
+            proxyBalita.Close();
         }
     }
 }

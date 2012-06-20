@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost/Bhm.Service/BalitasService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <xs:import schemaLocation="http://localhost/Bhm.Service/BalitasService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Balitas" />
+  <xs:import schemaLocation="http://localhost:2370/Bhm.Service/BalitasService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:2370/Bhm.Service/BalitasService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Balitas" />
   <xs:element name="ListBalita">
     <xs:complexType>
       <xs:sequence />
@@ -69,6 +69,22 @@
   <xs:element name="UpdateBalitaResponse">
     <xs:complexType>
       <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataBalita">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="namaBalita" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="namaAyah" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="namaIbu" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dataBalitaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Balitas" minOccurs="0" name="dataBalitaResult" nillable="true" type="q3:BalitaData" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

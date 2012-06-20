@@ -11,7 +11,7 @@ namespace Ayahs
 {
     public class AyahsServiceImpl : IAyahsService
     {
-        public void InsertAyah(string nama, string pkj, DateTime tl, string alamat)
+       public void InsertAyah(string nama, string pkj, DateTime tl, string alamat)
         {
             using (DbBhmEntities dc = new DbBhmEntities())
             {
