@@ -1,41 +1,52 @@
-﻿<%@ Page Title="BHM - (Posyandu) Balita" Language="C#" MasterPageFile="~/Posyandu.Master" AutoEventWireup="true"
-    CodeBehind="Imunisasi.aspx.cs" Inherits="Bhm.Web.Pos.Imunisasi" %>
+﻿<%@ Page Title="BHM - (Posyandu) Imunisasi" Language="C#" MasterPageFile="~/Posyandu.Master" AutoEventWireup="true"
+    CodeBehind="Imunisasi.aspx.cs" Inherits="Bhm.Web.Posyandu.Imunisasi" %>
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Imunisasi</h2>
-    <table>
-    <tr>
-    <td>Nama Balita</td>
-    <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
-    </tr>
-    <tr>
-    <td>HBO</td>
-    <td><asp:Calendar ID="Calendar1" runat="server"></asp:Calendar></td>
-    </tr>
-    <tr>
-    <td>BCG, Polio1</td>
-    <td><asp:Calendar ID="Calendar2" runat="server"></asp:Calendar></td>
-    </tr>
-    <tr>
-    <td>DPT/HBO1, Polio2</td>
-    <td><asp:Calendar ID="Calendar3" runat="server"></asp:Calendar></td>
-    </tr>
-    <tr>
-    <td>DPT/HBO2, Polio3</td>
-    <td><asp:Calendar ID="Calendar4" runat="server"></asp:Calendar></td>
-    </tr>
-    <tr>
-    <td>DPT/HBO3, Polio4</td>
-    <td><asp:Calendar ID="Calendar5" runat="server"></asp:Calendar></td>
-    </tr>
-    <tr>
-    <td>Campak</td>
-    <td><asp:Calendar ID="Calendar6" runat="server"></asp:Calendar></td>
-    </tr>
-    <tr>
-    <td></td>
-    <td><asp:Button ID="Button1" runat="server" Text="Simpan" Width="64px" /></td>
-    </tr>
-    </table>
+    <span class="failureNotification">
+        <asp:Literal ID="ErrorMessage" runat="server"></asp:Literal>
+    </span>
+    <asp:ValidationSummary ID="RegisterUserValidationSummary" runat="server" CssClass="failureNotification" 
+        ValidationGroup="RegisterUserValidationGroup"/>
+    <div class="accountInfo">
+        <fieldset class="register">
+            <legend>Imunisasi</legend>
+                <p>
+                    <asp:Label ID="NameLabel" runat="server" AssociatedControlID="Name">Nama Balita:</asp:Label>
+                    <asp:TextBox ID="Name" runat="server" CssClass="textEntry"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="NameRequired" runat="server" ControlToValidate="Name" 
+                        CssClass="failureNotification" ErrorMessage="Nama Balita harus di isi." ToolTip="Nama Balita harus di isi." 
+                        ValidationGroup="RegisterUserValidationGroup">*</asp:RequiredFieldValidator>
+                </p>
+                <p>
+                    <asp:Label ID="HBOLabel" runat="server" AssociatedControlID="HBO">HBO :</asp:Label>
+                    <asp:Calendar ID="HBO" runat="server"></asp:Calendar>
+                </p>
+                <p>
+                    <asp:Label ID="Imun1Label" runat="server" AssociatedControlID="Imun1">BCG, Polio1 :</asp:Label>
+                    <asp:Calendar ID="Imun1" runat="server"></asp:Calendar>
+                </p>
+                <p>
+                    <asp:Label ID="Imun2Label" runat="server" AssociatedControlID="Imun2">DPT/HBO1, Polio2 :</asp:Label>
+                    <asp:Calendar ID="Imun2" runat="server"></asp:Calendar>
+                </p>
+                <p>
+                    <asp:Label ID="Imun3Label" runat="server" AssociatedControlID="Imun3">DPT/HBO2, Polio3 :</asp:Label>
+                    <asp:Calendar ID="Imun3" runat="server"></asp:Calendar>
+                </p>
+                <p>
+                    <asp:Label ID="Imun4Label" runat="server" AssociatedControlID="Imun4">DPT/HBO3, Polio4 :</asp:Label>
+                    <asp:Calendar ID="Imun4" runat="server"></asp:Calendar>
+                </p>
+                <p>
+                    <asp:Label ID="Imun5Label" runat="server" AssociatedControlID="Imun5">Campak :</asp:Label>
+                    <asp:Calendar ID="Imun5" runat="server"></asp:Calendar>
+                </p>
+        </fieldset>
+        <p class="submitButton">
+            <asp:Button ID="ImunisasiButton" runat="server" CommandName="MoveNext" Text="Simpan" 
+                ValidationGroup="RegisterUserValidationGroup"/>
+        </p>
+    </div>
+
 </asp:Content>

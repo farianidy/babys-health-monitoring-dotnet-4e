@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="524c3442-5f0b-48a2-a0e5-f1e25324ea03" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="825d79e8-95e7-4a5e-8886-7bf462a00e4e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -18,15 +18,15 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/Bhm.Service/BalitasService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:2370/Bhm.Service/BalitasService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="BalitasService.xsd" MetadataType="Schema" ID="edc1e6f4-c01e-4857-96e4-fe111d9850a9" SourceId="1" SourceUrl="http://localhost/Bhm.Service/BalitasService.svc?xsd=xsd3" />
-    <MetadataFile FileName="BalitasService1.xsd" MetadataType="Schema" ID="5cb2f602-8e5c-4a14-b6b1-f563893f898c" SourceId="1" SourceUrl="http://localhost/Bhm.Service/BalitasService.svc?xsd=xsd1" />
-    <MetadataFile FileName="BalitasService2.xsd" MetadataType="Schema" ID="c148374b-6e9f-4e5d-9547-a335dad3b3ba" SourceId="1" SourceUrl="http://localhost/Bhm.Service/BalitasService.svc?xsd=xsd2" />
-    <MetadataFile FileName="BalitasServiceImpl.wsdl" MetadataType="Wsdl" ID="bdd9cbeb-f62c-4191-af9a-06071bc9a7e2" SourceId="1" SourceUrl="http://localhost/Bhm.Service/BalitasService.svc?wsdl" />
-    <MetadataFile FileName="BalitasService3.xsd" MetadataType="Schema" ID="0d343f48-945f-4b80-87a8-98c9ae71d156" SourceId="1" SourceUrl="http://localhost/Bhm.Service/BalitasService.svc?xsd=xsd0" />
-    <MetadataFile FileName="BalitasService.disco" MetadataType="Disco" ID="9b3383ee-52e3-4073-8a1d-d9c3095e4164" SourceId="1" SourceUrl="http://localhost/Bhm.Service/BalitasService.svc?disco" />
+    <MetadataFile FileName="BalitasService.xsd" MetadataType="Schema" ID="5678afc2-19c9-409f-a1e0-8ce01d65cd60" SourceId="1" SourceUrl="http://localhost:2370/Bhm.Service/BalitasService.svc?xsd=xsd3" />
+    <MetadataFile FileName="BalitasService1.xsd" MetadataType="Schema" ID="ce7950bb-b8ec-4755-973c-d949fa76ac90" SourceId="1" SourceUrl="http://localhost:2370/Bhm.Service/BalitasService.svc?xsd=xsd2" />
+    <MetadataFile FileName="BalitasService2.xsd" MetadataType="Schema" ID="973f5db6-f6bd-4dc0-a0e0-f45c17ed8b0d" SourceId="1" SourceUrl="http://localhost:2370/Bhm.Service/BalitasService.svc?xsd=xsd1" />
+    <MetadataFile FileName="BalitasService3.xsd" MetadataType="Schema" ID="08189aa9-b7cf-40f7-9a16-a36d8b0b49fd" SourceId="1" SourceUrl="http://localhost:2370/Bhm.Service/BalitasService.svc?xsd=xsd0" />
+    <MetadataFile FileName="BalitasServiceImpl.wsdl" MetadataType="Wsdl" ID="b5b07ae6-29a1-4794-913f-8331a0117781" SourceId="1" SourceUrl="http://localhost:2370/Bhm.Service/BalitasService.svc?wsdl" />
+    <MetadataFile FileName="BalitasService.disco" MetadataType="Disco" ID="380a51ed-a8e8-4692-9428-6ec215273fb9" SourceId="1" SourceUrl="http://localhost:2370/Bhm.Service/BalitasService.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

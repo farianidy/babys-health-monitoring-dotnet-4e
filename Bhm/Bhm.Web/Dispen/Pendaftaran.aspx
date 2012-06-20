@@ -128,6 +128,10 @@
                 <asp:RequiredFieldValidator ID="BBLRequired" runat="server" ControlToValidate="BBL" 
                     CssClass="failureNotification" ErrorMessage="Berat Badan Lahir harus di isi." ToolTip="Berat Badan Lahir harus di isi." 
                     ValidationGroup="TambahBalitaValidationGroup">*</asp:RequiredFieldValidator>
+                <asp:CompareValidator id="BBLValidator" runat="server"
+                        ErrorMessage="Yang dimasukkan harus berupa angka."
+                        ControlToValidate="BBL" Type="Integer"
+                        Operator="DataTypeCheck"></asp:CompareValidator>
             </p>
             <p>
                 <asp:Label ID="TBLLabel" runat="server">Tinggi Badan Lahir (cm):</asp:Label>
@@ -135,6 +139,10 @@
                 <asp:RequiredFieldValidator ID="TBLRequired" runat="server" ControlToValidate="TBL" 
                     CssClass="failureNotification" ErrorMessage="Tinggi Badan Lahir harus di isi." ToolTip="Tinggi Badan Lahir harus di isi." 
                     ValidationGroup="TambahBalitaValidationGroup">*</asp:RequiredFieldValidator>
+                <asp:CompareValidator id="TBLValidator" runat="server"
+                        ErrorMessage="Yang dimasukkan harus berupa angka."
+                        ControlToValidate="TBL" Type="Integer" ValidationGroup="RegisterUserValidationGroup"
+                        Operator="DataTypeCheck"></asp:CompareValidator>
             </p>
         </fieldset>
         <p class="submitButton">

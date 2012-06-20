@@ -10,10 +10,14 @@
             <p>
                 <asp:Label ID="BalitaLabel" runat="server">Nama Balita:</asp:Label>
                 <asp:TextBox ID="Balita" runat="server" CssClass="textEntry" Enabled="false"></asp:TextBox>
+           
+                
             </p>
             <p>
                 <asp:Label ID="TglLahirLabel" runat="server">Tangal Lahir:</asp:Label>
                 <asp:TextBox ID="TglLahir" runat="server" CssClass="textEntry" Enabled="false"></asp:TextBox>
+                
+                    
             </p>
             <p>
                 <asp:Label ID="AlamatLabel" runat="server">Alamat:</asp:Label>
@@ -31,10 +35,13 @@
             <p>
                 <asp:Label ID="BBLLabel" runat="server">Berat Badan Lahir (kg):</asp:Label>
                 <asp:TextBox ID="BBL" runat="server" CssClass="textEntry" Enabled="false"></asp:TextBox>
+                
+                      
             </p>
             <p>
                 <asp:Label ID="TBLLabel" runat="server">Tinggi Badan Lahir (cm):</asp:Label>
                 <asp:TextBox ID="TBL" runat="server" CssClass="textEntry" Enabled="false"></asp:TextBox>
+            
             </p>
         </fieldset>
     </div>
