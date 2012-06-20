@@ -118,9 +118,6 @@
                 <asp:Label ID="JKLabel" runat="server" AssociatedControlID="LakiRadioButton">Jenis Kelamin:</asp:Label>
                 <asp:RadioButton ID="LakiRadioButton" runat="server" Text="Laki-Laki" GroupName="JK" Checked="true" />
                 <asp:RadioButton ID="PerempuanRadioButton" runat="server" Text="Perempuan" GroupName="JK" />
-                <asp:RequiredFieldValidator ID="JKRequired" runat="server" ControlToValidate="JK" 
-                    CssClass="failureNotification" ErrorMessage="Jenis Kelamin harus di isi." ToolTip="Jenis Kelamin harus di isi." 
-                    ValidationGroup="TambahBalitaValidationGroup">*</asp:RequiredFieldValidator>
             </p>
             <p>
                 <asp:Label ID="BBLLabel" runat="server" AssociatedControlID="BBL">Berat Badan Lahir (kg):</asp:Label>
@@ -128,6 +125,10 @@
                 <asp:RequiredFieldValidator ID="BBLRequired" runat="server" ControlToValidate="BBL" 
                     CssClass="failureNotification" ErrorMessage="Berat Badan Lahir harus di isi." ToolTip="Berat Badan Lahir harus di isi." 
                     ValidationGroup="TambahBalitaValidationGroup">*</asp:RequiredFieldValidator>
+                <asp:CompareValidator id="BBLValidator" runat="server"
+                        ErrorMessage="Yang dimasukkan harus berupa angka."
+                        ControlToValidate="BBL" Type="Double"
+                        Operator="DataTypeCheck"></asp:CompareValidator>
             </p>
             <p>
                 <asp:Label ID="TBLLabel" runat="server">Tinggi Badan Lahir (cm):</asp:Label>
@@ -135,6 +136,10 @@
                 <asp:RequiredFieldValidator ID="TBLRequired" runat="server" ControlToValidate="TBL" 
                     CssClass="failureNotification" ErrorMessage="Tinggi Badan Lahir harus di isi." ToolTip="Tinggi Badan Lahir harus di isi." 
                     ValidationGroup="TambahBalitaValidationGroup">*</asp:RequiredFieldValidator>
+                <asp:CompareValidator id="TBLValidator" runat="server"
+                        ErrorMessage="Yang dimasukkan harus berupa angka."
+                        ControlToValidate="TBL" Type="Double" ValidationGroup="RegisterUserValidationGroup"
+                        Operator="DataTypeCheck"></asp:CompareValidator>
             </p>
         </fieldset>
         <p class="submitButton">

@@ -67,6 +67,16 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator NameRequired;
         
         /// <summary>
+<<<<<<< .mine
+        /// LihatButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button LihatButton;
+        
+        /// <summary>
         /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
@@ -76,6 +86,17 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
+=======
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
+>>>>>>> .r12
         /// HBOLabel control.
         /// </summary>
         /// <remarks>
@@ -148,6 +169,9 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.WebControls.TextBox DPT;
         
         /// <summary>
+<<<<<<< .mine
+        /// DPTCalendarExtender control.
+=======
         /// DPTCalendarExtender control.
         /// </summary>
         /// <remarks>
@@ -176,47 +200,102 @@ namespace Bhm.Web.Pos {
         
         /// <summary>
         /// Imun4Label control.
+>>>>>>> .r12
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Imun4Label;
+        protected global::AjaxControlToolkit.CalendarExtender DPTCalendarExtender;
         
         /// <summary>
-        /// Imun4 control.
+        /// DPT2Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Imun4;
+        protected global::System.Web.UI.WebControls.Label DPT2Label;
         
         /// <summary>
-        /// Imun5Label control.
+        /// DPT2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Imun5Label;
+        protected global::System.Web.UI.WebControls.TextBox DPT2;
         
         /// <summary>
-        /// Imun5 control.
+        /// DPT2CalendarExtender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Imun5;
+        protected global::AjaxControlToolkit.CalendarExtender DPT2CalendarExtender;
         
         /// <summary>
-        /// ImunisasiButton control.
+        /// DPT3Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ImunisasiButton;
+        protected global::System.Web.UI.WebControls.Label DPT3Label;
+        
+        /// <summary>
+        /// DPT3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox DPT3;
+        
+        /// <summary>
+        /// DPT3CalendarExtender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender DPT3CalendarExtender;
+        
+        /// <summary>
+        /// CampakLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CampakLabel;
+        
+        /// <summary>
+        /// Campak control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Campak;
+        
+        /// <summary>
+        /// CampakCalendarExtender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender CampakCalendarExtender;
+        
+        /// <summary>
+        /// SimpanButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SimpanButton;
     }
 }

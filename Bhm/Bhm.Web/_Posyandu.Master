@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_Posyandu.Master.cs" Inherits="Bhm.Web._Posyandu" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Baby's Health Monitoring
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:Panel ID="PanelMemberLogin" runat="server">
+                    <asp:Label ID="UserLabel" runat="server"></asp:Label> | 
+                    <asp:LinkButton ID="LinkLogOut" runat="server" OnClick="LogOut_Clicked">Log Out</asp:LinkButton>
+                </asp:Panel>
+                <%--<asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Selamat Datang <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>--%>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenuAdmin" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Pos/Posyandu.aspx" Text="Beranda"/>
+                        <asp:MenuItem Text="Balita" >
+                            <asp:MenuItem NavigateUrl="~/Pos/Balita.aspx" Text="Lihat Balita" />
+                            <asp:MenuItem NavigateUrl="~/Pos/IkutKegiatan.aspx" Text="Ikut Kegiatan" />
+                            <asp:MenuItem NavigateUrl="~/Pos/Imunisasi.aspx" Text="Imunisasi" />
+                            <asp:MenuItem NavigateUrl="~/Pos/Vitamin.aspx" Text="Vitamin" />
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Pos/LihatPosyandu.aspx" Text="Posyandu" />
+                        <asp:MenuItem Text="Pegawai">
+                            <asp:MenuItem NavigateUrl="~/Pos/TambahPegawaiPosyandu.aspx" Text="Tambah Pegawai" />
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Pos/Posyandu.aspx" Text="Beranda"/>
+                        <asp:MenuItem Text="Balita" >
+                            <asp:MenuItem NavigateUrl="~/Pos/Balita.aspx" Text="Lihat Balita" />
+                            <asp:MenuItem NavigateUrl="~/Pos/IkutKegiatan.aspx" Text="Ikut Kegiatan" />
+                            <asp:MenuItem NavigateUrl="~/Pos/Imunisasi.aspx" Text="Imunisasi" />
+                            <asp:MenuItem NavigateUrl="~/Pos/Vitamin.aspx" Text="Vitamin" />
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Pos/LihatPosyandu.aspx" Text="Posyandu" />
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+        <div class="footer">
+            <p>Dibuat oleh Kelompok 4. Dewi, Ayu, Riski, Agnes, dan Fitri.</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

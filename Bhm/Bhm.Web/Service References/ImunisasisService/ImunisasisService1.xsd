@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/Bhm.Service/ImunisasisService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Imunisasis" />
+  <xs:element name="InsertImunisasi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hbo" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="bcg_Polio1" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dptHb1_Polio2" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dptHb2_Polio2" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dptHb3_Polio4" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="campak" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertImunisasiResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImunisasiById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idImunisasi" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetImunisasiByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Imunisasis" minOccurs="0" name="GetImunisasiByIdResult" nillable="true" type="q1:ImunisasiData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateImunisasi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="hbo" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="bcg_Polio1" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dptHb1_Polio2" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dptHb2_Polio2" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dptHb3_Polio4" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="campak" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateImunisasiResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

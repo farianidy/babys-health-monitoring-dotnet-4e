@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Posyandu.Master" AutoEventWireup="true" CodeBehind="TambahPegawaiPosyandu.aspx.cs" Inherits="Bhm.Web.Pos.TambahPegawaiPosyandu" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/_Posyandu.Master" AutoEventWireup="true"
+    CodeBehind="TambahPegawaiPosyandu.aspx.cs" Inherits="Bhm.Web.Pos.TambahPegawaiPosyandu" %>
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">

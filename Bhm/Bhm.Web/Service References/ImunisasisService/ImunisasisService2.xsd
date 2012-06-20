@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Imunisasis" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Imunisasis" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ImunisasiData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bcg_Polio1" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="campak" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dptHb1_Polio2" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dptHb2_Polio2" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dptHb3_Polio4" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="hbo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idImunisasi" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ImunisasiData" nillable="true" type="tns:ImunisasiData" />
+</xs:schema>

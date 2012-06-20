@@ -15,6 +15,13 @@ namespace Imunisasis
         //Tambah Imunisasi
         void InsertImunisasi(DateTime hbo, DateTime bcg_Polio1, DateTime dptHb1_Polio2, DateTime dptHb2_Polio2,
                     DateTime dptHb3_Polio4, DateTime campak);
+
+        [OperationContract]
+        ImunisasiData GetImunisasiById(int idImunisasi);
+
+        [OperationContract]
+        void UpdateImunisasi(int id, DateTime hbo, DateTime bcg_Polio1, DateTime dptHb1_Polio2, DateTime dptHb2_Polio2,
+                DateTime dptHb3_Polio4, DateTime campak);
     }
 
     [DataContract]

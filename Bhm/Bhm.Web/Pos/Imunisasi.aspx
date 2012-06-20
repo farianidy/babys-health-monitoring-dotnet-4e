@@ -22,6 +22,19 @@
                         CssClass="failureNotification" ErrorMessage="Nama Balita harus di isi." ToolTip="Nama Balita harus di isi." 
                         ValidationGroup="CariBalitaValidationGroup">*</asp:RequiredFieldValidator>
                 </p>
+<<<<<<< .mine
+        </fieldset>
+        <p class="submitButton">
+            <asp:Button ID="LihatButton" runat="server" CommandName="MoveNext" Text="Lihat" OnClick="Lihat_Clicked"
+                ValidationGroup="CariBalitaValidationGroup"/>
+        </p>
+    </div>
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div class="accountInfo">
+        <fieldset class="register">
+            <legend>Imunisasi</legend>
+=======
         </fieldset>
     </div>
     <asp:ScriptManager ID="ScriptManager1" runat="server">
@@ -29,6 +42,7 @@
     <div class="accountInfo">
         <fieldset class="register">
             <legend>Imunisasi</legend>
+>>>>>>> .r12
                 <p>
                     <asp:Label ID="HBOLabel" runat="server" AssociatedControlID="HBO">HBO :</asp:Label>
                     <asp:TextBox ID="HBO" runat="server" CssClass="textEntry"></asp:TextBox>
@@ -45,21 +59,23 @@
                     <ajaxToolkit:CalendarExtender TargetControlID="DPT" ID="DPTCalendarExtender" Format="d/MM/yyyy" runat="server" />
                 </p>
                 <p>
-                    <asp:Label ID="Imun3Label" runat="server" AssociatedControlID="Imun3">DPT/HBO2, Polio3 :</asp:Label>
-                    <asp:Calendar ID="Imun3" runat="server"></asp:Calendar>
+                    <asp:Label ID="DPT2Label" runat="server" AssociatedControlID="DPT2">DPT/HBO2, Polio3 :</asp:Label>
+                    <asp:TextBox ID="DPT2" runat="server" CssClass="textEntry"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender TargetControlID="DPT2" ID="DPT2CalendarExtender" Format="d/MM/yyyy" runat="server" />
                 </p>
                 <p>
-                    <asp:Label ID="Imun4Label" runat="server" AssociatedControlID="Imun4">DPT/HBO3, Polio4 :</asp:Label>
-                    <asp:Calendar ID="Imun4" runat="server"></asp:Calendar>
+                    <asp:Label ID="DPT3Label" runat="server" AssociatedControlID="DPT3">DPT/HBO3, Polio4 :</asp:Label>
+                    <asp:TextBox ID="DPT3" runat="server" CssClass="textEntry"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender TargetControlID="DPT3" ID="DPT3CalendarExtender" Format="d/MM/yyyy" runat="server" />
                 </p>
                 <p>
-                    <asp:Label ID="Imun5Label" runat="server" AssociatedControlID="Imun5">Campak :</asp:Label>
-                    <asp:Calendar ID="Imun5" runat="server"></asp:Calendar>
+                    <asp:Label ID="CampakLabel" runat="server" AssociatedControlID="Campak">Campak :</asp:Label>
+                    <asp:TextBox ID="Campak" runat="server" CssClass="textEntry"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender TargetControlID="Campak" ID="CampakCalendarExtender" Format="d/MM/yyyy" runat="server" />
                 </p>
         </fieldset>
         <p class="submitButton">
-            <asp:Button ID="ImunisasiButton" runat="server" CommandName="MoveNext" Text="Simpan" 
-                ValidationGroup="RegisterUserValidationGroup"/>
+            <asp:Button ID="SimpanButton" runat="server" CommandName="MoveNext" Text="Simpan" OnClick="Simpan_Clicked"/>
         </p>
     </div>
 

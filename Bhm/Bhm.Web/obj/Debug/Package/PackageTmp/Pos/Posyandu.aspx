@@ -1,4 +1,4 @@
-﻿<%@ Page Title="BHM - (Posyandu) Beranda" Language="C#" MasterPageFile="~/Posyandu.Master" AutoEventWireup="true"
+﻿<%@ Page Title="BHM - (Posyandu) Beranda" Language="C#" MasterPageFile="~/_Posyandu.Master" AutoEventWireup="true"
     CodeBehind="Posyandu.aspx.cs" Inherits="Bhm.Web.Pos.Posyandu" %>
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
