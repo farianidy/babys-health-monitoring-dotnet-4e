@@ -11,7 +11,7 @@ namespace Ibus
 {
     public class IbusServiceImpl : IIbusService
     {
-         public void InsertIbu(string nama, string pkj, DateTime tl, string alamat)
+        public void InsertIbu(string nama, string pkj, DateTime tl, string alamat)
         {
             using (DbBhmEntities dc = new DbBhmEntities())
             {
@@ -27,34 +27,53 @@ namespace Ibus
             }
         }
 
-         public IbuData GetBalita (int id)
-         {
-             IbuData ibuData = null;
+        public IbuData GetIbuById(int id)
+        {
+            IbuData ibuData = null;
 
-             try
-             {
-                 using (DbBhmEntities db = new DbBhmEntities())
-                 {
-                     Ibu matchingIbu = db.Ibus.First(p => int.Equals(p.idIbu, id));
+            try
+            {
+                using (DbBhmEntities db = new DbBhmEntities())
+                {
+                    Ibu matching = db.Ibus.First(p => p.idIbu == id);
 
-                     ibuData = new IbuData()
-                     {
-                         idIbu = matchingIbu.idIbu,
-                         namaIbu = matchingIbu.namaIbu,
-                         pkjIbu = matchingIbu.pkjIbu,
-                         //tlIbu = matchingIbu.tlIbu,
-                         alamatIbu = matchingIbu.alamatIbu,
-                     };
+                    ibuData = new IbuData()
+                    {
+                        namaIbu = matching.namaIbu,
+                        pkjIbu = matching.pkjIbu,
+                        tlIbu = Convert.ToDateTime(matching.tlIbu),
+                        alamatIbu = matching.alamatIbu
+                    };
                 }
-             }
-             catch
-             {
-                 // Ignore exceptions
-             }
+            }
+            catch
+            {
+                // Ignore exceptions
+            }
 
-             return ibuData;
-         }
+            return ibuData;
+        }
 
-       
+        public int GetIdByName(string nama)
+        {
+            int idIbu = 0;
+
+            try
+            {
+                using (DbBhmEntities db = new DbBhmEntities())
+                {
+                    Ibu matchingIbu = db.Ibus.First(
+                        p => String.Compare(p.namaIbu, nama) == 0);
+
+                    idIbu = matchingIbu.idIbu;
+                }
+            }
+            catch
+            {
+                // Ignore exceptions
+            }
+
+            return idIbu;
+        }
     }
 }

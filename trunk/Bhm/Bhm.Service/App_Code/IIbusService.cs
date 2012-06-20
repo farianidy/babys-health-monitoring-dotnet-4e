@@ -10,13 +10,15 @@ namespace Ibus
     [ServiceContract]
     public interface IIbusService
     {
-        // Ambil detail 1 ibu dari nama
-        [OperationContract]
-        IbuData GetIbu(string nama);
-
         // Tambah ibu
         [OperationContract]
         void InsertIbu(string nama, string pkj, DateTime tl, string alamat);
+
+        [OperationContract]
+        IbuData GetIbuById(int id);
+
+        [OperationContract]
+        int GetIdByName(string nama);
     }
 
     [DataContract]

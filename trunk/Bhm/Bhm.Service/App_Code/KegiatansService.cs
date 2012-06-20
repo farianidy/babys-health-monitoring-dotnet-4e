@@ -11,13 +11,14 @@ namespace Kegiatans
 {
     public class KegiatansServiceImpl : IKegiatansService
     {
-        public void InsertKegiatan(int idBalita, DateTime tgl, double bb, double tb)
+        public void InsertKegiatan(int idBalita, int idPosyandu, DateTime tgl, double bb, double tb)
         {
             using (DbBhmEntities dc = new DbBhmEntities())
             {
                 Kegiatan kegiatan = new Kegiatan();
 
                 kegiatan.idBalita = idBalita;
+                kegiatan.idPosyandu = idPosyandu;
                 kegiatan.tglPeriksa = tgl;
                 kegiatan.bb = bb;
                 kegiatan.tb = tb;

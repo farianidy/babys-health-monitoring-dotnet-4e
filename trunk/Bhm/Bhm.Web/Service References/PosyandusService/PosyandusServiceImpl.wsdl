@@ -44,6 +44,12 @@
   <wsdl:message name="IPosyandusService_UpdatePosyandu_OutputMessage">
     <wsdl:part name="parameters" element="tns:UpdatePosyanduResponse" />
   </wsdl:message>
+  <wsdl:message name="IPosyandusService_GetIdByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIdByName" />
+  </wsdl:message>
+  <wsdl:message name="IPosyandusService_GetIdByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIdByNameResponse" />
+  </wsdl:message>
   <wsdl:portType name="IPosyandusService">
     <wsdl:operation name="ListPosyandu">
       <wsdl:input wsaw:Action="http://tempuri.org/IPosyandusService/ListPosyandu" message="tns:IPosyandusService_ListPosyandu_InputMessage" />
@@ -68,6 +74,10 @@
     <wsdl:operation name="UpdatePosyandu">
       <wsdl:input wsaw:Action="http://tempuri.org/IPosyandusService/UpdatePosyandu" message="tns:IPosyandusService_UpdatePosyandu_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IPosyandusService/UpdatePosyanduResponse" message="tns:IPosyandusService_UpdatePosyandu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIdByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPosyandusService/GetIdByName" message="tns:IPosyandusService_GetIdByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPosyandusService/GetIdByNameResponse" message="tns:IPosyandusService_GetIdByName_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IPosyandusService" type="tns:IPosyandusService">
@@ -119,6 +129,15 @@
     </wsdl:operation>
     <wsdl:operation name="UpdatePosyandu">
       <soap:operation soapAction="http://tempuri.org/IPosyandusService/UpdatePosyandu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdByName">
+      <soap:operation soapAction="http://tempuri.org/IPosyandusService/GetIdByName" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

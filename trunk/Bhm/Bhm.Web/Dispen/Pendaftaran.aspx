@@ -118,9 +118,6 @@
                 <asp:Label ID="JKLabel" runat="server" AssociatedControlID="LakiRadioButton">Jenis Kelamin:</asp:Label>
                 <asp:RadioButton ID="LakiRadioButton" runat="server" Text="Laki-Laki" GroupName="JK" Checked="true" />
                 <asp:RadioButton ID="PerempuanRadioButton" runat="server" Text="Perempuan" GroupName="JK" />
-                <asp:RequiredFieldValidator ID="JKRequired" runat="server" ControlToValidate="JK" 
-                    CssClass="failureNotification" ErrorMessage="Jenis Kelamin harus di isi." ToolTip="Jenis Kelamin harus di isi." 
-                    ValidationGroup="TambahBalitaValidationGroup">*</asp:RequiredFieldValidator>
             </p>
             <p>
                 <asp:Label ID="BBLLabel" runat="server" AssociatedControlID="BBL">Berat Badan Lahir (kg):</asp:Label>
@@ -130,7 +127,7 @@
                     ValidationGroup="TambahBalitaValidationGroup">*</asp:RequiredFieldValidator>
                 <asp:CompareValidator id="BBLValidator" runat="server"
                         ErrorMessage="Yang dimasukkan harus berupa angka."
-                        ControlToValidate="BBL" Type="Integer"
+                        ControlToValidate="BBL" Type="Double"
                         Operator="DataTypeCheck"></asp:CompareValidator>
             </p>
             <p>
@@ -141,7 +138,7 @@
                     ValidationGroup="TambahBalitaValidationGroup">*</asp:RequiredFieldValidator>
                 <asp:CompareValidator id="TBLValidator" runat="server"
                         ErrorMessage="Yang dimasukkan harus berupa angka."
-                        ControlToValidate="TBL" Type="Integer" ValidationGroup="RegisterUserValidationGroup"
+                        ControlToValidate="TBL" Type="Double" ValidationGroup="RegisterUserValidationGroup"
                         Operator="DataTypeCheck"></asp:CompareValidator>
             </p>
         </fieldset>

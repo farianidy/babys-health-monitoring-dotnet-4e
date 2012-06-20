@@ -159,6 +159,9 @@ namespace Bhm.Web.PosyandusService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPosyandusService/UpdatePosyandu", ReplyAction="http://tempuri.org/IPosyandusService/UpdatePosyanduResponse")]
         void UpdatePosyandu(int id, string nama, string desa, string kec, string kab, string prov);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPosyandusService/GetIdByName", ReplyAction="http://tempuri.org/IPosyandusService/GetIdByNameResponse")]
+        int GetIdByName(string nama);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -210,6 +213,10 @@ namespace Bhm.Web.PosyandusService {
         
         public void UpdatePosyandu(int id, string nama, string desa, string kec, string kab, string prov) {
             base.Channel.UpdatePosyandu(id, nama, desa, kec, kab, prov);
+        }
+        
+        public int GetIdByName(string nama) {
+            return base.Channel.GetIdByName(nama);
         }
     }
 }
