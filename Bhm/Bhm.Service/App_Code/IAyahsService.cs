@@ -13,6 +13,15 @@ namespace Ayahs
         // Tambah ayah
         [OperationContract]
         void InsertAyah(string nama, string pkj, DateTime tl, string alamat);
+
+        // Ambil detail ayah dari id
+        [OperationContract]
+        AyahData GetAyahById(int id);
+
+        // Ambil id dari nama
+        [OperationContract]
+        int GetIdByName(string nama);
+
     }
 
     [DataContract]
@@ -25,7 +34,7 @@ namespace Ayahs
         public string namaAyah { get; set; }
 
         [DataMember]
-        public int pkjAyah { get; set; }
+        public string pkjAyah { get; set; }
 
         [DataMember]
         public DateTime tlAyah { get; set; }

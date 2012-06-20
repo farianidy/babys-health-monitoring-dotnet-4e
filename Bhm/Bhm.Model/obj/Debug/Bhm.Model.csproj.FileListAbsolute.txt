@@ -4,9 +4,3 @@ D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.
 D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Model\obj\Debug\ResolveAssemblyReference.cache
 D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Model\obj\Debug\Bhm.Model.dll
 D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Model\obj\Debug\Bhm.Model.pdb
-H:\gress\Bhm\Bhm.Model\bin\Debug\Bhm.Model.dll.config
-H:\gress\Bhm\Bhm.Model\bin\Debug\Bhm.Model.dll
-H:\gress\Bhm\Bhm.Model\bin\Debug\Bhm.Model.pdb
-H:\gress\Bhm\Bhm.Model\obj\Debug\ResolveAssemblyReference.cache
-H:\gress\Bhm\Bhm.Model\obj\Debug\Bhm.Model.dll
-H:\gress\Bhm\Bhm.Model\obj\Debug\Bhm.Model.pdb

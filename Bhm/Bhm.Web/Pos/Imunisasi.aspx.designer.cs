@@ -7,10 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bhm.Web.Posyandu {
+namespace Bhm.Web.Pos {
     
     
     public partial class Imunisasi {
+        
+        /// <summary>
+        /// successNotificatonPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel successNotificatonPanel;
         
         /// <summary>
         /// ErrorMessage control.
@@ -22,13 +31,13 @@ namespace Bhm.Web.Posyandu {
         protected global::System.Web.UI.WebControls.Literal ErrorMessage;
         
         /// <summary>
-        /// RegisterUserValidationSummary control.
+        /// CariBalitaValidationSummary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary RegisterUserValidationSummary;
+        protected global::System.Web.UI.WebControls.ValidationSummary CariBalitaValidationSummary;
         
         /// <summary>
         /// NameLabel control.
@@ -58,6 +67,15 @@ namespace Bhm.Web.Posyandu {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator NameRequired;
         
         /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
         /// HBOLabel control.
         /// </summary>
         /// <remarks>
@@ -73,61 +91,88 @@ namespace Bhm.Web.Posyandu {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar HBO;
+        protected global::System.Web.UI.WebControls.TextBox HBO;
         
         /// <summary>
-        /// Imun1Label control.
+        /// HBOCalendarExtender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Imun1Label;
+        protected global::AjaxControlToolkit.CalendarExtender HBOCalendarExtender;
         
         /// <summary>
-        /// Imun1 control.
+        /// BCGLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Imun1;
+        protected global::System.Web.UI.WebControls.Label BCGLabel;
         
         /// <summary>
-        /// Imun2Label control.
+        /// BCG control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Imun2Label;
+        protected global::System.Web.UI.WebControls.TextBox BCG;
         
         /// <summary>
-        /// Imun2 control.
+        /// BCGCalendarExtender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Imun2;
+        protected global::AjaxControlToolkit.CalendarExtender BCGCalendarExtender;
         
         /// <summary>
-        /// Imun3Label control.
+        /// DPTLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Imun3Label;
+        protected global::System.Web.UI.WebControls.Label DPTLabel;
         
         /// <summary>
-        /// Imun3 control.
+        /// DPT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Imun3;
+        protected global::System.Web.UI.WebControls.TextBox DPT;
+        
+        /// <summary>
+        /// DPTCalendarExtender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender DPTCalendarExtender;
+        
+        /// <summary>
+        /// DPT2Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DPT2Label;
+        
+        /// <summary>
+        /// DPT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar DPT;
         
         /// <summary>
         /// Imun4Label control.

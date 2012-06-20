@@ -167,5 +167,27 @@ namespace Posyandus
                 // Ignore exceptions
             }
         }
+
+        public int GetIdByName(string nama)
+        {
+            int idPosyandu = 0;
+
+            try
+            {
+                using (DbBhmEntities db = new DbBhmEntities())
+                {
+                    Posyandu matching = db.Posyandus.First(
+                        p => String.Compare(p.namaPosyandu, nama) == 0);
+
+                    idPosyandu = matching.idPosyandu;
+                }
+            }
+            catch
+            {
+                // Ignore exceptions
+            }
+
+            return idPosyandu;
+        }
     }
 }

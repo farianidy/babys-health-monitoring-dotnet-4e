@@ -10,7 +10,7 @@ using Bhm.Model;
 namespace Vitamins
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "VitaminsService" in code, svc and config file together.
-    public class VitaminsService : IVitaminsService
+    public class VitaminsServiceImpl : IVitaminsService
     {
         public void InsertVitamin(DateTime kapsulBiru, DateTime kapsulMerah1, DateTime kapsulMerah2, DateTime kapsulMerah3,
             DateTime kapsulMerah4)

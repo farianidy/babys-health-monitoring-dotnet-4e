@@ -10,7 +10,7 @@ using Bhm.Model;
 namespace Imunisasis
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "ImunisasisService" in code, svc and config file together.
-    public class ImunisasisService : IImunisasisService
+    public class ImunisasisServiceImpl : IImunisasisService
     {
         public void InsertImunisasi(DateTime hbo, DateTime bcg_Polio1, DateTime dptHb1_Polio2, DateTime dptHb2_Polio2,
                 DateTime dptHb3_Polio4, DateTime campak)

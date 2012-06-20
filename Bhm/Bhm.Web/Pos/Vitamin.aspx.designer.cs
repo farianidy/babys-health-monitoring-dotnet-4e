@@ -7,10 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bhm.Web.Posyandu {
+namespace Bhm.Web.Pos {
     
     
     public partial class Vitamin {
+        
+        /// <summary>
+        /// successNotificatonPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel successNotificatonPanel;
         
         /// <summary>
         /// ErrorMessage control.

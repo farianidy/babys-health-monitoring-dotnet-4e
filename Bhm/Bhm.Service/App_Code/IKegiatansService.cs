@@ -12,7 +12,7 @@ namespace Kegiatans
     {
         // Tambah kegiatan
         [OperationContract]
-        void InsertKegiatan(int idBalita, DateTime tgl, double bb, double tb);
+        void InsertKegiatan(int idBalita, int idPosyandu, DateTime tgl, double bb, double tb);
     }
 
     [DataContract]

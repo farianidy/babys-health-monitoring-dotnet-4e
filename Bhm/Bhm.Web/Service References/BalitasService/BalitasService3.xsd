@@ -14,20 +14,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetBalita">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="nama" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetBalitaResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Balitas" minOccurs="0" name="GetBalitaResult" nillable="true" type="q2:BalitaData" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="InsertBalita">
     <xs:complexType>
       <xs:sequence>
@@ -71,7 +57,7 @@
       <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="dataBalita">
+  <xs:element name="GetBalita">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="namaBalita" nillable="true" type="xs:string" />
@@ -80,10 +66,24 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="dataBalitaResponse">
+  <xs:element name="GetBalitaResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Balitas" minOccurs="0" name="dataBalitaResult" nillable="true" type="q3:BalitaData" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Balitas" minOccurs="0" name="GetBalitaResult" nillable="true" type="q2:BalitaData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIdByName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nama" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIdByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetIdByNameResult" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -95,6 +95,19 @@
     <Content Include="Pos\LihatPosyandu.aspx" />
     <Content Include="Pos\TambahPegawaiPosyandu.aspx" />
     <Content Include="Pos\Vitamin.aspx" />
+    <None Include="Service References\AyahsService\AyahsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AyahsService\AyahsService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AyahsService\AyahsService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AyahsService\AyahsServiceImpl.wsdl" />
+    <None Include="Service References\AyahsService\Bhm.Web.AyahsService.AyahData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\BalitasService\BalitasService.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -111,6 +124,33 @@
     <None Include="Service References\BalitasService\Bhm.Web.BalitasService.BalitaData.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\IbusService\Bhm.Web.IbusService.IbuData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IbusService\IbusService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IbusService\IbusService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IbusService\IbusService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IbusService\IbusServiceImpl.wsdl" />
+    <None Include="Service References\ImunisasisService\ImunisasisService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ImunisasisService\ImunisasisService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ImunisasisService\ImunisasisServiceImpl.wsdl" />
+    <None Include="Service References\KegiatansService\KegiatansService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KegiatansService\KegiatansService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KegiatansService\KegiatansServiceImpl.wsdl" />
     <None Include="Service References\PegawaisService\Bhm.Web.PegawaisService.PegawaiData.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -135,6 +175,41 @@
     <None Include="Service References\BalitasService\configuration91.svcinfo" />
     <None Include="Service References\BalitasService\configuration.svcinfo" />
     <None Include="Service References\BalitasService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AyahsService\AyahsService.disco" />
+    <None Include="Service References\AyahsService\configuration91.svcinfo" />
+    <None Include="Service References\AyahsService\configuration.svcinfo" />
+    <None Include="Service References\AyahsService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\IbusService\IbusService.disco" />
+    <None Include="Service References\IbusService\configuration91.svcinfo" />
+    <None Include="Service References\IbusService\configuration.svcinfo" />
+    <None Include="Service References\IbusService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\KegiatansService\KegiatansService.disco" />
+    <None Include="Service References\KegiatansService\configuration91.svcinfo" />
+    <None Include="Service References\KegiatansService\configuration.svcinfo" />
+    <None Include="Service References\KegiatansService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ImunisasisService\ImunisasisService.disco" />
+    <None Include="Service References\ImunisasisService\configuration91.svcinfo" />
+    <None Include="Service References\ImunisasisService\configuration.svcinfo" />
+    <None Include="Service References\ImunisasisService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\VitaminsService\VitaminsService.disco" />
+    <None Include="Service References\VitaminsService\configuration91.svcinfo" />
+    <None Include="Service References\VitaminsService\configuration.svcinfo" />
+    <None Include="Service References\VitaminsService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -164,6 +239,13 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\PosyandusService\PosyandusServiceImpl.wsdl" />
+    <None Include="Service References\VitaminsService\VitaminsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VitaminsService\VitaminsService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VitaminsService\VitaminsServiceImpl.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -323,12 +405,37 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Posyandu.Master.cs">
-      <DependentUpon>Posyandu.Master</DependentUpon>
+    <Compile Include="Service References\AyahsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\IbusService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ImunisasisService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\KegiatansService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\VitaminsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="_Posyandu.Master.cs">
+      <DependentUpon>_Posyandu.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Posyandu.Master.designer.cs">
-      <DependentUpon>Posyandu.Master</DependentUpon>
+    <Compile Include="_Posyandu.Master.designer.cs">
+      <DependentUpon>_Posyandu.Master</DependentUpon>
     </Compile>
     <Compile Include="Pos\Balita.aspx.cs">
       <DependentUpon>Balita.aspx</DependentUpon>
@@ -421,7 +528,7 @@
     <Content Include="Dinkes.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Posyandu.Master" />
+    <Content Include="_Posyandu.Master" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dispencapil.Master" />
@@ -433,9 +540,14 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AyahsService\" />
     <WCFMetadataStorage Include="Service References\BalitasService\" />
+    <WCFMetadataStorage Include="Service References\IbusService\" />
+    <WCFMetadataStorage Include="Service References\ImunisasisService\" />
+    <WCFMetadataStorage Include="Service References\KegiatansService\" />
     <WCFMetadataStorage Include="Service References\PegawaisService\" />
     <WCFMetadataStorage Include="Service References\PosyandusService\" />
+    <WCFMetadataStorage Include="Service References\VitaminsService\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\PegawaisService\PegawaisService.xsd">

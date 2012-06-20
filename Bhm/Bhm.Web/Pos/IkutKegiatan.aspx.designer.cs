@@ -31,13 +31,13 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.WebControls.Literal ErrorMessage;
         
         /// <summary>
-        /// TambahAkunValidationSummary control.
+        /// IkutKegiatanValidationSummary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary TambahAkunValidationSummary;
+        protected global::System.Web.UI.WebControls.ValidationSummary IkutKegiatanValidationSummary;
         
         /// <summary>
         /// NameLabel control.
@@ -49,13 +49,13 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.WebControls.Label NameLabel;
         
         /// <summary>
-        /// Name control.
+        /// Balita control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Name;
+        protected global::System.Web.UI.WebControls.TextBox Balita;
         
         /// <summary>
         /// NameRequired control.
@@ -65,6 +65,33 @@ namespace Bhm.Web.Pos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator NameRequired;
+        
+        /// <summary>
+        /// PosyanduLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label PosyanduLabel;
+        
+        /// <summary>
+        /// Posyandu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Posyandu;
+        
+        /// <summary>
+        /// PosyanduRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PosyanduRequired;
         
         /// <summary>
         /// TanggalLabel control.
@@ -82,16 +109,7 @@ namespace Bhm.Web.Pos {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Tanggal;
-        
-        /// <summary>
-        /// RequiredFieldValidator3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.TextBox Tanggal;
         
         /// <summary>
         /// BeratLabel control.
@@ -112,13 +130,22 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.WebControls.TextBox Berat;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// BeratRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator BeratRequired;
+        
+        /// <summary>
+        /// BeratValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator BeratValidator;
         
         /// <summary>
         /// TinggiLabel control.
@@ -139,21 +166,30 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.WebControls.TextBox Tinggi;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// TinggiRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator TinggiRequired;
         
         /// <summary>
-        /// TambahButton control.
+        /// TinggiValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TambahButton;
+        protected global::System.Web.UI.WebControls.CompareValidator TinggiValidator;
+        
+        /// <summary>
+        /// IkutKegiatanButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button IkutKegiatanButton;
     }
 }

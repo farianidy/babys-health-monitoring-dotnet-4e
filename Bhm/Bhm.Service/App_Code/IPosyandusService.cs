@@ -32,6 +32,9 @@ namespace Posyandus
         // Update posyandu
         [OperationContract]
         void UpdatePosyandu(int id, string nama, string desa, string kec, string kab, string prov);
+
+        [OperationContract]
+        int GetIdByName(string nama);
     }
 
     [DataContract]

@@ -11,7 +11,7 @@ namespace Bhm.Web.Pos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            successNotificatonPanel.Visible = false;
         }
     }
 }

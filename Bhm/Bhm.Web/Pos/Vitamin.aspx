@@ -1,8 +1,12 @@
-﻿<%@ Page Title="BHM - (Posyandu) Vitamin" Language="C#" MasterPageFile="~/Posyandu.Master" AutoEventWireup="true" CodeBehind="Vitamin.aspx.cs"
-    Inherits="Bhm.Web.Posyandu.Vitamin" %>
+﻿<%@ Page Title="BHM - (Posyandu) Vitamin" Language="C#" MasterPageFile="~/_Posyandu.Master" AutoEventWireup="true"
+    CodeBehind="Vitamin.aspx.cs" Inherits="Bhm.Web.Pos.Vitamin" %>
 <asp:Content ID="HeadContent" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <h2>Data Vitamin</h2>
+    <asp:Panel id="successNotificatonPanel" runat="server">
+        <p><span>Berhasil menambahkan.</span></p>
+    </asp:Panel>
     <span class="failureNotification">
         <asp:Literal ID="ErrorMessage" runat="server"></asp:Literal>
     </span>

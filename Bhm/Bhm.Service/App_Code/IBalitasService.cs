@@ -14,10 +14,6 @@ namespace Balitas
         [OperationContract]
         List<string> ListBalita();
 
-        // Ambil detail 1 balita dari nama
-        [OperationContract]
-        BalitaData GetBalita(string nama);
-
         // Tambah balita
         [OperationContract]
         void InsertBalita(int idAyah, int idIbu, string nama, DateTime tl, string alamat, int anak, string jk,
@@ -29,7 +25,10 @@ namespace Balitas
             double bbl, double tbl);
 
         [OperationContract]
-        BalitaData dataBalita(string namaBalita, string namaAyah, string namaIbu);
+        BalitaData GetBalita(string namaBalita, string namaAyah, string namaIbu);
+
+        [OperationContract]
+        int GetIdByName(string nama);
     }
 
     [DataContract]
