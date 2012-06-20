@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a050084-5dea-4e0d-8f87-b9f0958b9698" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Bhm.Service/VitaminsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VitaminsServiceImpl.wsdl" MetadataType="Wsdl" ID="2ccdb05b-e602-4955-8156-5aff8e8e1114" SourceId="1" SourceUrl="http://localhost/Bhm.Service/VitaminsService.svc?wsdl" />
+    <MetadataFile FileName="VitaminsService.xsd" MetadataType="Schema" ID="332bc559-38fb-44aa-a6a9-e4e1a4000d05" SourceId="1" SourceUrl="http://localhost/Bhm.Service/VitaminsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VitaminsService1.xsd" MetadataType="Schema" ID="0d8988b7-6f00-4cee-8f81-b1c601efc8a3" SourceId="1" SourceUrl="http://localhost/Bhm.Service/VitaminsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VitaminsService.disco" MetadataType="Disco" ID="ba252ed5-5341-406e-89f4-d128a58009e0" SourceId="1" SourceUrl="http://localhost/Bhm.Service/VitaminsService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

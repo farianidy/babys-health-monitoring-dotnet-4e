@@ -124,6 +124,41 @@
     <None Include="Service References\BalitasService\Bhm.Web.BalitasService.BalitaData.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+<<<<<<< .mine
+    <None Include="Service References\IbusService\Bhm.Web.IbusService.IbuData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\IbusService\IbusService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IbusService\IbusService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IbusService\IbusService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IbusService\IbusServiceImpl.wsdl" />
+    <None Include="Service References\ImunisasisService\Bhm.Web.ImunisasisService.ImunisasiData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ImunisasisService\ImunisasisService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ImunisasisService\ImunisasisService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ImunisasisService\ImunisasisService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ImunisasisService\ImunisasisServiceImpl.wsdl" />
+    <None Include="Service References\KegiatansService\KegiatansService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KegiatansService\KegiatansService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\KegiatansService\KegiatansServiceImpl.wsdl" />
+=======
     <None Include="Service References\IbusService\Bhm.Web.IbusService.IbuData.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -151,6 +186,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\KegiatansService\KegiatansServiceImpl.wsdl" />
+>>>>>>> .r12
     <None Include="Service References\PegawaisService\Bhm.Web.PegawaisService.PegawaiData.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>

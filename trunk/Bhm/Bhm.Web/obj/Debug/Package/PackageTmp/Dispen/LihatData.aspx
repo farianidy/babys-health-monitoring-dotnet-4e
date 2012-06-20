@@ -39,7 +39,6 @@
                 SortExpression="tlIbu" />
             <asp:BoundField DataField="alamatIbu" HeaderText="Alamat" 
                 SortExpression="alamatIbu" />
-            <asp:CommandField ShowEditButton="True" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -58,7 +57,6 @@
             Balita.alamatBalita, Balita.anakKe, Balita.jnsKelamin, Balita.bbl, Balita.tbl,
             Ayah.namaAyah, Ayah.pkjAyah, CONVERT(VARCHAR(10),tlAyah,111) as tlAyah, Ayah.alamatAyah,
             Ibu.namaIbu, Ibu.pkjIbu, CONVERT(VARCHAR(10),tlIbu,111) as tlIbu, Ibu.alamatIbu
-            FROM Balita INNER JOIN Ayah ON Balita.idAyah = Ayah.idAyah INNER JOIN Ibu ON Balita.idIbu = Ibu.idIbu"
-        UpdateCommand="">
+            FROM Balita INNER JOIN Ayah ON Balita.idAyah = Ayah.idAyah INNER JOIN Ibu ON Balita.idIbu = Ibu.idIbu">
     </asp:SqlDataSource>
 </asp:Content>

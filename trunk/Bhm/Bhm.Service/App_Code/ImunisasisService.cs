@@ -17,17 +17,73 @@ namespace Imunisasis
         {
             using (DbBhmEntities dc = new DbBhmEntities())
             {
-                Imunisasi imunisasi = new Imunisasi();
+                Imunisasi imun = new Imunisasi();
 
-                imunisasi.hbo = DateTime.Now;
-                imunisasi.bcg_Polio1 = DateTime.Now;
-                imunisasi.dptHb1_Polio2 = DateTime.Now;
-                imunisasi.dptHb2_Polio2 = DateTime.Now;
-                imunisasi.dptHb3_Polio4 = DateTime.Now;
-                imunisasi.campak = DateTime.Now;
+                imun.hbo = hbo;
+                imun.bcg_Polio1 = bcg_Polio1;
+                imun.dptHb1_Polio2 = dptHb1_Polio2;
+                imun.dptHb2_Polio2 = dptHb2_Polio2;
+                imun.dptHb3_Polio4 = dptHb3_Polio4;
+                imun.campak = campak;
 
-                dc.Imunisasis.AddObject(imunisasi);
+                dc.Imunisasis.AddObject(imun);
                 dc.SaveChanges();
+            }
+        }
+
+        public ImunisasiData GetImunisasiById(int idImunisasi)
+        {
+            ImunisasiData imunisasiData = null;
+
+            try
+            {
+                using (DbBhmEntities db = new DbBhmEntities())
+                {
+                    Imunisasi matching = db.Imunisasis.First(
+                        p => p.idImunisasi == idImunisasi);
+
+                    imunisasiData = new ImunisasiData()
+                    {
+                        idImunisasi = Convert.ToInt32(matching.idImunisasi),
+                        hbo = Convert.ToDateTime(matching.hbo),
+                        bcg_Polio1 = Convert.ToDateTime(matching.bcg_Polio1),
+                        dptHb1_Polio2 = Convert.ToDateTime(matching.dptHb1_Polio2),
+                        dptHb2_Polio2 = Convert.ToDateTime(matching.dptHb2_Polio2),
+                        dptHb3_Polio4 = Convert.ToDateTime(matching.dptHb3_Polio4),
+                        campak = Convert.ToDateTime(matching.campak)
+                    };
+                }
+            }
+            catch
+            {
+                // Ignore exceptions
+            }
+
+            return imunisasiData;
+        }
+
+        public void UpdateImunisasi(int id, DateTime hbo, DateTime bcg_Polio1, DateTime dptHb1_Polio2, DateTime dptHb2_Polio2,
+                DateTime dptHb3_Polio4, DateTime campak)
+        {
+            try
+            {
+                using (DbBhmEntities db = new DbBhmEntities())
+                {
+                    Imunisasi imun = db.Imunisasis.Single(p => p.idImunisasi == id);
+
+                    imun.hbo = hbo;
+                    imun.bcg_Polio1 = bcg_Polio1;
+                    imun.dptHb1_Polio2 = dptHb1_Polio2;
+                    imun.dptHb2_Polio2 = dptHb2_Polio2;
+                    imun.dptHb3_Polio4 = dptHb3_Polio4;
+                    imun.campak = campak;
+
+                    db.SaveChanges();
+                }
+            }
+            catch
+            {
+                // Ignore exceptions
             }
         }
     }

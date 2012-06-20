@@ -247,11 +247,22 @@ namespace Bhm.Web.BalitasService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBalitasService/UpdateBalita", ReplyAction="http://tempuri.org/IBalitasService/UpdateBalitaResponse")]
         void UpdateBalita(int id, int idAyah, int idIbu, int idVit, int idImun, string nama, System.DateTime tl, string alamat, int anak, string jk, double bbl, double tbl);
         
+<<<<<<< .mine
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBalitasService/GetBalita", ReplyAction="http://tempuri.org/IBalitasService/GetBalitaResponse")]
         Bhm.Web.BalitasService.BalitaData GetBalita(string namaBalita, string namaAyah, string namaIbu);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBalitasService/GetIdByName", ReplyAction="http://tempuri.org/IBalitasService/GetIdByNameResponse")]
         int GetIdByName(string nama);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBalitasService/GetBalitaByName", ReplyAction="http://tempuri.org/IBalitasService/GetBalitaByNameResponse")]
+        Bhm.Web.BalitasService.BalitaData GetBalitaByName(string nama);
+=======
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBalitasService/GetBalita", ReplyAction="http://tempuri.org/IBalitasService/GetBalitaResponse")]
+        Bhm.Web.BalitasService.BalitaData GetBalita(string namaBalita, string namaAyah, string namaIbu);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBalitasService/GetIdByName", ReplyAction="http://tempuri.org/IBalitasService/GetIdByNameResponse")]
+        int GetIdByName(string nama);
+>>>>>>> .r12
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -296,9 +307,20 @@ namespace Bhm.Web.BalitasService {
         public Bhm.Web.BalitasService.BalitaData GetBalita(string namaBalita, string namaAyah, string namaIbu) {
             return base.Channel.GetBalita(namaBalita, namaAyah, namaIbu);
         }
+<<<<<<< .mine
         
         public int GetIdByName(string nama) {
             return base.Channel.GetIdByName(nama);
         }
+        
+        public Bhm.Web.BalitasService.BalitaData GetBalitaByName(string nama) {
+            return base.Channel.GetBalitaByName(nama);
+        }
+=======
+        
+        public int GetIdByName(string nama) {
+            return base.Channel.GetIdByName(nama);
+        }
+>>>>>>> .r12
     }
 }
