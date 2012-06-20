@@ -11,5 +11,23 @@ namespace Bhm.Web.Dispen {
     
     
     public partial class LihatData {
+        
+        /// <summary>
+        /// GridViewBalita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewBalita;
+        
+        /// <summary>
+        /// SqlDataSourceBalita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceBalita;
     }
 }

@@ -11,7 +11,12 @@ namespace Bhm.Web.Dispen
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            successNotificatonPanel.Visible = false;
+        }
 
+        protected void Tambah_Clicked(object sender, EventArgs e)
+        {
+            successNotificatonPanel.Visible = true;
         }
     }
 }

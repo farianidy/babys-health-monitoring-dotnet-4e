@@ -41,10 +41,10 @@
                             <asp:MenuItem Text="Lihat Posyandu" NavigateUrl="~/DinasKes/LihatPosyandu.aspx" />
                             <asp:MenuItem Text="Tambah Posyandu" NavigateUrl="~/DinasKes/TambahPosyandu.aspx" />
                         </asp:MenuItem>
+                        <asp:MenuItem Text="Balita" NavigateUrl="~/DinasKes/Balita.aspx" />
                         <asp:MenuItem Text="Laporan">
-                            <asp:MenuItem Text="Balita" NavigateUrl="~/DinasKes/LaporanBalita.aspx" />
                             <asp:MenuItem Text="Gizi" NavigateUrl="~/DinasKes/LaporanGizi.aspx" />
-                        <asp:MenuItem Text="Keaktifan" NavigateUrl="~/DinasKes/LaporanKeaktifan.aspx" />
+                            <asp:MenuItem Text="Keaktifan" NavigateUrl="~/DinasKes/LaporanKeaktifan.aspx" />
                         </asp:MenuItem>
                         <asp:MenuItem  Text="Pegawai">
                             <asp:MenuItem Text="Tambah Pegawai" NavigateUrl="~/DinasKes/TambahPegawaiDinkes.aspx" />
@@ -58,10 +58,10 @@
                             <asp:MenuItem Text="Lihat Posyandu" NavigateUrl="~/DinasKes/LihatPosyandu.aspx" />
                             <asp:MenuItem Text="Tambah Posyandu" NavigateUrl="~/DinasKes/TambahPosyandu.aspx" />
                         </asp:MenuItem>
+                        <asp:MenuItem Text="Balita" NavigateUrl="~/DinasKes/Balita.aspx" />
                         <asp:MenuItem Text="Laporan">
-                            <asp:MenuItem Text="Balita" NavigateUrl="~/DinasKes/LaporanBalita.aspx" />
                             <asp:MenuItem Text="Gizi" NavigateUrl="~/DinasKes/LaporanGizi.aspx" />
-                        <asp:MenuItem Text="Keaktifan" NavigateUrl="~/DinasKes/LaporanKeaktifan.aspx" />
+                            <asp:MenuItem Text="Keaktifan" NavigateUrl="~/DinasKes/LaporanKeaktifan.aspx" />
                         </asp:MenuItem>
                     </Items>
                 </asp:Menu>

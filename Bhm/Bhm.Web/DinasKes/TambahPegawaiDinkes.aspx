@@ -6,13 +6,13 @@
         Tambah Akun Pegawai
     </h2>
     <asp:Panel id="successNotificatonPanel" runat="server">
-        <p><span>Berhasil menambahkan</span></p>
+        <p><span>Berhasil menambahkan.</span></p>
     </asp:Panel>
     <span class="failureNotification">
         <asp:Literal ID="ErrorMessage" runat="server"></asp:Literal>
     </span>
-    <asp:ValidationSummary ID="RegisterUserValidationSummary" runat="server" CssClass="failureNotification" 
-            ValidationGroup="RegisterUserValidationGroup"/>
+    <asp:ValidationSummary ID="TambahAkunValidationSummary" runat="server" CssClass="failureNotification" 
+            ValidationGroup="TambahAkunValidationGroup"/>
     <div class="accountInfo">
         <fieldset class="register">
             <legend>Informasi Akun</legend>
@@ -21,7 +21,7 @@
                 <asp:TextBox ID="Name" runat="server" CssClass="textEntry"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="NameRequired" runat="server" ControlToValidate="Name" 
                         CssClass="failureNotification" ErrorMessage="Nama Lengkap harus di isi." ToolTip="Nama Lengkap harus di isi." 
-                        ValidationGroup="RegisterUserValidationGroup">*</asp:RequiredFieldValidator>
+                        ValidationGroup="TambahAkunValidationGroup">*</asp:RequiredFieldValidator>
             </p>
             <p>
                 <asp:Label ID="InstanceLabel" runat="server">Instansi:</asp:Label>
@@ -32,14 +32,14 @@
                 <asp:TextBox ID="UserName" runat="server" CssClass="textEntry"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" 
                         CssClass="failureNotification" ErrorMessage="User Name harus di isi." ToolTip="User Name harus di isi." 
-                        ValidationGroup="RegisterUserValidationGroup">*</asp:RequiredFieldValidator>
+                        ValidationGroup="TambahAkunValidationGroup">*</asp:RequiredFieldValidator>
             </p>
             <p>
                 <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password:</asp:Label>
                 <asp:TextBox ID="Password" runat="server" CssClass="passwordEntry" TextMode="Password"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" 
                         CssClass="failureNotification" ErrorMessage="Password harus di isi." ToolTip="Password harus di isi." 
-                        ValidationGroup="RegisterUserValidationGroup">*</asp:RequiredFieldValidator>
+                        ValidationGroup="TambahAkunValidationGroup">*</asp:RequiredFieldValidator>
             </p>
             <p>
                 <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword">Konfirmasi Password:</asp:Label>
@@ -49,7 +49,7 @@
                         ToolTip="Confirm Password harus di isi." ValidationGroup="RegisterUserValidationGroup">*</asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="PasswordCompare" runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword" 
                         CssClass="failureNotification" Display="Dynamic" ErrorMessage="Password and Konfirmasi Password harus sama."
-                        ValidationGroup="RegisterUserValidationGroup">*</asp:CompareValidator>
+                        ValidationGroup="TambahAkunValidationGroup">*</asp:CompareValidator>
             </p>
             <p>
                 <asp:Label ID="AdminLabel" runat="server">Administrator:</asp:Label><br />
@@ -59,7 +59,7 @@
         </fieldset>
         <p class="submitButton">
             <asp:Button ID="TambahButton" runat="server" CommandName="MoveNext" Text="Tambah Akun"  OnClick="Tambah_Clicked"
-                    ValidationGroup="RegisterUserValidationGroup"/>
+                    ValidationGroup="TambahAkunValidationGroup"/>
         </p>
     </div>
 </asp:Content>
