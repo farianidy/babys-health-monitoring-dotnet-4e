@@ -54,6 +54,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -72,9 +73,11 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="BalitaKMS.aspx" />
+    <Content Include="Balita.aspx" />
+    <Content Include="DetilBalita.aspx" />
+    <Content Include="DinasKes\DetilBalita.aspx" />
     <Content Include="DinasKes\Dinkes.aspx" />
-    <Content Include="DinasKes\LaporanBalita.aspx" />
+    <Content Include="DinasKes\Balita.aspx" />
     <Content Include="DinasKes\LaporanGizi.aspx" />
     <Content Include="DinasKes\LaporanKeaktifan.aspx" />
     <Content Include="DinasKes\LihatPosyandu.aspx" />
@@ -83,15 +86,31 @@
     <Content Include="Dispen\Dispencapil.aspx" />
     <Content Include="Dispen\LihatData.aspx" />
     <Content Include="Dispen\Pendaftaran.aspx" />
-    <Content Include="HomeMain.aspx" />
+    <Content Include="Dispen\TambahPegawaiDispen.aspx" />
     <Content Include="Pos\Balita.aspx" />
-    <Content Include="Pos\DetailPosyandu.aspx" />
+    <Content Include="Pos\DetilBalita.aspx" />
     <Content Include="Pos\Posyandu.aspx" />
     <Content Include="Pos\IkutKegiatan.aspx" />
     <Content Include="Pos\Imunisasi.aspx" />
-    <Content Include="Pos\KMS.aspx" />
-    <Content Include="Pos\PosyanduPosyandu.aspx" />
+    <Content Include="Pos\LihatPosyandu.aspx" />
+    <Content Include="Pos\TambahPegawaiPosyandu.aspx" />
     <Content Include="Pos\Vitamin.aspx" />
+    <None Include="Service References\BalitasService\BalitasService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BalitasService\BalitasService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BalitasService\BalitasService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BalitasService\BalitasService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BalitasService\BalitasServiceImpl.wsdl" />
+    <None Include="Service References\BalitasService\Bhm.Web.BalitasService.BalitaData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\PegawaisService\Bhm.Web.PegawaisService.PegawaiData.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -109,6 +128,13 @@
     <None Include="Service References\PosyandusService\configuration91.svcinfo" />
     <None Include="Service References\PosyandusService\configuration.svcinfo" />
     <None Include="Service References\PosyandusService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BalitasService\BalitasService.disco" />
+    <None Include="Service References\BalitasService\configuration91.svcinfo" />
+    <None Include="Service References\BalitasService\configuration.svcinfo" />
+    <None Include="Service References\BalitasService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -175,12 +201,12 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BalitaKMS.aspx.cs">
-      <DependentUpon>BalitaKMS.aspx</DependentUpon>
+    <Compile Include="Balita.aspx.cs">
+      <DependentUpon>Balita.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BalitaKMS.aspx.designer.cs">
-      <DependentUpon>BalitaKMS.aspx</DependentUpon>
+    <Compile Include="Balita.aspx.designer.cs">
+      <DependentUpon>Balita.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -188,6 +214,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetilBalita.aspx.cs">
+      <DependentUpon>DetilBalita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetilBalita.aspx.designer.cs">
+      <DependentUpon>DetilBalita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DinasKes\DetilBalita.aspx.cs">
+      <DependentUpon>DetilBalita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DinasKes\DetilBalita.aspx.designer.cs">
+      <DependentUpon>DetilBalita.aspx</DependentUpon>
     </Compile>
     <Compile Include="DinasKes\TambahPegawaiDinkes.aspx.cs">
       <DependentUpon>TambahPegawaiDinkes.aspx</DependentUpon>
@@ -210,12 +250,12 @@
     <Compile Include="DinasKes\Dinkes.aspx.designer.cs">
       <DependentUpon>Dinkes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DinasKes\LaporanBalita.aspx.cs">
-      <DependentUpon>LaporanBalita.aspx</DependentUpon>
+    <Compile Include="DinasKes\Balita.aspx.cs">
+      <DependentUpon>Balita.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DinasKes\LaporanBalita.aspx.designer.cs">
-      <DependentUpon>LaporanBalita.aspx</DependentUpon>
+    <Compile Include="DinasKes\Balita.aspx.designer.cs">
+      <DependentUpon>Balita.aspx</DependentUpon>
     </Compile>
     <Compile Include="DinasKes\LaporanGizi.aspx.cs">
       <DependentUpon>LaporanGizi.aspx</DependentUpon>
@@ -273,15 +313,15 @@
     <Compile Include="Dispencapil.Master.designer.cs">
       <DependentUpon>Dispencapil.Master</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="HomeMain.aspx.cs">
-      <DependentUpon>HomeMain.aspx</DependentUpon>
+    <Compile Include="Dispen\TambahPegawaiDispen.aspx.cs">
+      <DependentUpon>TambahPegawaiDispen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomeMain.aspx.designer.cs">
-      <DependentUpon>HomeMain.aspx</DependentUpon>
+    <Compile Include="Dispen\TambahPegawaiDispen.aspx.designer.cs">
+      <DependentUpon>TambahPegawaiDispen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Posyandu.Master.cs">
       <DependentUpon>Posyandu.Master</DependentUpon>
@@ -297,12 +337,12 @@
     <Compile Include="Pos\Balita.aspx.designer.cs">
       <DependentUpon>Balita.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pos\DetailPosyandu.aspx.cs">
-      <DependentUpon>DetailPosyandu.aspx</DependentUpon>
+    <Compile Include="Pos\DetilBalita.aspx.cs">
+      <DependentUpon>DetilBalita.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pos\DetailPosyandu.aspx.designer.cs">
-      <DependentUpon>DetailPosyandu.aspx</DependentUpon>
+    <Compile Include="Pos\DetilBalita.aspx.designer.cs">
+      <DependentUpon>DetilBalita.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pos\Posyandu.aspx.cs">
       <DependentUpon>Posyandu.aspx</DependentUpon>
@@ -325,19 +365,19 @@
     <Compile Include="Pos\Imunisasi.aspx.designer.cs">
       <DependentUpon>Imunisasi.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pos\KMS.aspx.cs">
-      <DependentUpon>KMS.aspx</DependentUpon>
+    <Compile Include="Pos\LihatPosyandu.aspx.cs">
+      <DependentUpon>LihatPosyandu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pos\KMS.aspx.designer.cs">
-      <DependentUpon>KMS.aspx</DependentUpon>
+    <Compile Include="Pos\LihatPosyandu.aspx.designer.cs">
+      <DependentUpon>LihatPosyandu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pos\PosyanduPosyandu.aspx.cs">
-      <DependentUpon>PosyanduPosyandu.aspx</DependentUpon>
+    <Compile Include="Pos\TambahPegawaiPosyandu.aspx.cs">
+      <DependentUpon>TambahPegawaiPosyandu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pos\PosyanduPosyandu.aspx.designer.cs">
-      <DependentUpon>PosyanduPosyandu.aspx</DependentUpon>
+    <Compile Include="Pos\TambahPegawaiPosyandu.aspx.designer.cs">
+      <DependentUpon>TambahPegawaiPosyandu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pos\Vitamin.aspx.cs">
       <DependentUpon>Vitamin.aspx</DependentUpon>
@@ -347,6 +387,11 @@
       <DependentUpon>Vitamin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\BalitasService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\PegawaisService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -388,6 +433,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BalitasService\" />
     <WCFMetadataStorage Include="Service References\PegawaisService\" />
     <WCFMetadataStorage Include="Service References\PosyandusService\" />
   </ItemGroup>

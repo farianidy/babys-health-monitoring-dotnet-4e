@@ -19,17 +19,33 @@
                 </h1>
             </div>
             <div class="loginDisplay">
-                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
-                    <%--<AnonymousTemplate>
+                <asp:Panel ID="PanelMemberLogin" runat="server">
+                    <asp:Label ID="UserLabel" runat="server"></asp:Label> | 
+                    <asp:LinkButton ID="LinkLogOut" runat="server" OnClick="LogOut_Clicked">Log Out</asp:LinkButton>
+                </asp:Panel>
+                <%--<asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
                         [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
-                    </AnonymousTemplate>--%>
+                    </AnonymousTemplate>
                     <LoggedInTemplate>
                         Selamat Datang <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
                         [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
                     </LoggedInTemplate>
-                </asp:LoginView>
+                </asp:LoginView>--%>
             </div>
             <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenuAdmin" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Dispen/Dispencapil.aspx" Text="Beranda"/>
+                        <asp:MenuItem Text="Kelahiran Anak" >
+                            <asp:MenuItem Text="Lihat Data" NavigateUrl="~/Dispen/LihatData.aspx" />
+                            <asp:MenuItem Text="Pendaftaran" NavigateUrl="~/Dispen/Pendaftaran.aspx" />
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Pegawai">
+                            <asp:MenuItem NavigateUrl="~/Dispen/TambahPegawaiDispen.aspx" Text="Tambah Pegawai" />
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Dispen/Dispencapil.aspx" Text="Beranda"/>

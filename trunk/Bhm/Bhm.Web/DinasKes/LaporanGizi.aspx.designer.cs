@@ -22,21 +22,21 @@ namespace Bhm.Web.DinasKes {
         protected global::System.Web.UI.WebControls.DropDownList KecamatanDropDown;
         
         /// <summary>
-        /// FindKecamatanButton control.
+        /// CariKecamatanButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button FindKecamatanButton;
+        protected global::System.Web.UI.WebControls.Button CariKecamatanButton;
         
         /// <summary>
-        /// ReportViewer1 control.
+        /// ChartGizi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Microsoft.Reporting.WebForms.ReportViewer ReportViewer1;
+        protected global::System.Web.UI.DataVisualization.Charting.Chart ChartGizi;
     }
 }

@@ -13,5 +13,10 @@ namespace Bhm.Web.Pos
         {
 
         }
+
+        protected void Lihat_Clicked(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pos/DetilBalita.aspx?Balita=" + BalitaTb.Text + "&Ayah=" + Ayah.Text + "&Ibu=" + Ibu.Text);
+        }
     }
 }
