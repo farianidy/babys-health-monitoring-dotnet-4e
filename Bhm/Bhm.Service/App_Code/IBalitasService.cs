@@ -25,7 +25,6 @@ namespace Balitas
             double bbl, double tbl);
 
         [OperationContract]
-<<<<<<< .mine
         BalitaData GetBalita(string namaBalita, string namaAyah, string namaIbu);
 
         [OperationContract]
@@ -33,12 +32,6 @@ namespace Balitas
 
         [OperationContract]
         BalitaData GetBalitaByName(string nama);
-=======
-        BalitaData GetBalita(string namaBalita, string namaAyah, string namaIbu);
-
-        [OperationContract]
-        int GetIdByName(string nama);
->>>>>>> .r12
     }
 
     [DataContract]

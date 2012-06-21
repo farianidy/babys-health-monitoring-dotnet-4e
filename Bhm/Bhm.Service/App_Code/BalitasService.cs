@@ -112,14 +112,11 @@ namespace Balitas
                     };
                 }
             }
-<<<<<<< .mine
             catch
             {
                 // Ignore exceptions
             }
 
-=======
->>>>>>> .r12
             return balitaData;
         }
 
@@ -179,28 +176,6 @@ namespace Balitas
             }
 
             return balitaData;
-        }
-
-        public int GetIdByName(string nama)
-        {
-            int idBalita = 0;
-
-            try
-            {
-                using (DbBhmEntities db = new DbBhmEntities())
-                {
-                    Balita matching = db.Balitas.First(
-                        p => String.Compare(p.namaBalita, nama) == 0);
-
-                    idBalita = matching.idBalita;
-                }
-            }
-            catch
-            {
-                // Ignore exceptions
-            }
-
-            return idBalita;
         }
     }
 }
