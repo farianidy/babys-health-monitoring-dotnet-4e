@@ -67,7 +67,6 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator NameRequired;
         
         /// <summary>
-<<<<<<< .mine
         /// LihatButton control.
         /// </summary>
         /// <remarks>
@@ -86,17 +85,6 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-=======
-        /// ScriptManager1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
-        
-        /// <summary>
->>>>>>> .r12
         /// HBOLabel control.
         /// </summary>
         /// <remarks>
@@ -169,38 +157,7 @@ namespace Bhm.Web.Pos {
         protected global::System.Web.UI.WebControls.TextBox DPT;
         
         /// <summary>
-<<<<<<< .mine
         /// DPTCalendarExtender control.
-=======
-        /// DPTCalendarExtender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.CalendarExtender DPTCalendarExtender;
-        
-        /// <summary>
-        /// DPT2Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DPT2Label;
-        
-        /// <summary>
-        /// DPT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar DPT;
-        
-        /// <summary>
-        /// Imun4Label control.
->>>>>>> .r12
         /// </summary>
         /// <remarks>
         /// Auto-generated field.

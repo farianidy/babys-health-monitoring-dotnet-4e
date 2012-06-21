@@ -22,7 +22,6 @@
                         CssClass="failureNotification" ErrorMessage="Nama Balita harus di isi." ToolTip="Nama Balita harus di isi." 
                         ValidationGroup="CariBalitaValidationGroup">*</asp:RequiredFieldValidator>
                 </p>
-<<<<<<< .mine
         </fieldset>
         <p class="submitButton">
             <asp:Button ID="LihatButton" runat="server" CommandName="MoveNext" Text="Lihat" OnClick="Lihat_Clicked"
@@ -34,15 +33,6 @@
     <div class="accountInfo">
         <fieldset class="register">
             <legend>Imunisasi</legend>
-=======
-        </fieldset>
-    </div>
-    <asp:ScriptManager ID="ScriptManager1" runat="server">
-    </asp:ScriptManager>
-    <div class="accountInfo">
-        <fieldset class="register">
-            <legend>Imunisasi</legend>
->>>>>>> .r12
                 <p>
                     <asp:Label ID="HBOLabel" runat="server" AssociatedControlID="HBO">HBO :</asp:Label>
                     <asp:TextBox ID="HBO" runat="server" CssClass="textEntry"></asp:TextBox>

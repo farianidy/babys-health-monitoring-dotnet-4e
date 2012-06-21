@@ -18,13 +18,9 @@ namespace Bhm.Web.Pos
 
         protected void Page_Load(object sender, EventArgs e)
         {
-<<<<<<< .mine
             successNotificatonPanel.Visible = false;
         }
 
-=======
-            successNotificatonPanel.Visible = false;
->>>>>>> .r12
         protected void Lihat_Clicked(object sender, EventArgs e)
         {
             BalitasServiceClient proxyBalita = new BalitasServiceClient();

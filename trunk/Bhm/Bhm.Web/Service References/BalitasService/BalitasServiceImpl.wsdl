@@ -32,7 +32,6 @@
   <wsdl:message name="IBalitasService_GetBalita_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetBalitaResponse" />
   </wsdl:message>
-<<<<<<< .mine
   <wsdl:message name="IBalitasService_GetIdByName_InputMessage">
     <wsdl:part name="parameters" element="tns:GetIdByName" />
   </wsdl:message>
@@ -45,14 +44,6 @@
   <wsdl:message name="IBalitasService_GetBalitaByName_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetBalitaByNameResponse" />
   </wsdl:message>
-=======
-  <wsdl:message name="IBalitasService_GetIdByName_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetIdByName" />
-  </wsdl:message>
-  <wsdl:message name="IBalitasService_GetIdByName_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetIdByNameResponse" />
-  </wsdl:message>
->>>>>>> .r12
   <wsdl:portType name="IBalitasService">
     <wsdl:operation name="ListBalita">
       <wsdl:input wsaw:Action="http://tempuri.org/IBalitasService/ListBalita" message="tns:IBalitasService_ListBalita_InputMessage" />
@@ -70,7 +61,6 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IBalitasService/GetBalita" message="tns:IBalitasService_GetBalita_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IBalitasService/GetBalitaResponse" message="tns:IBalitasService_GetBalita_OutputMessage" />
     </wsdl:operation>
-<<<<<<< .mine
     <wsdl:operation name="GetIdByName">
       <wsdl:input wsaw:Action="http://tempuri.org/IBalitasService/GetIdByName" message="tns:IBalitasService_GetIdByName_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IBalitasService/GetIdByNameResponse" message="tns:IBalitasService_GetIdByName_OutputMessage" />
@@ -79,12 +69,6 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IBalitasService/GetBalitaByName" message="tns:IBalitasService_GetBalitaByName_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IBalitasService/GetBalitaByNameResponse" message="tns:IBalitasService_GetBalitaByName_OutputMessage" />
     </wsdl:operation>
-=======
-    <wsdl:operation name="GetIdByName">
-      <wsdl:input wsaw:Action="http://tempuri.org/IBalitasService/GetIdByName" message="tns:IBalitasService_GetIdByName_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IBalitasService/GetIdByNameResponse" message="tns:IBalitasService_GetIdByName_OutputMessage" />
-    </wsdl:operation>
->>>>>>> .r12
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IBalitasService" type="tns:IBalitasService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
