@@ -1,3 +1,4 @@
 D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Tugas\Final Project\Bhm\Bhm.Client\bin\Debug\Bhm.Client.exe.config
 D:\New folder\baru\Bhm\Bhm.Client\bin\Debug\Bhm.Client.exe.config
 C:\Users\PETITE\Desktop\Bhm\Bhm.Client\bin\Debug\Bhm.Client.exe.config
+D:\Kuliah\Semester 6\Pemrograman Framework .NET - E\Final Project\Bhm\Bhm.Client\bin\Debug\Bhm.Client.exe.config
